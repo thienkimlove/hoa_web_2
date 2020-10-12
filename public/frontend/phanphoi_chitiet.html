@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="vi" class="no-js">
+<html lang="en" class="no-js">
 <head>
   <meta content='text/html; charset=utf-8' http-equiv='Content-Type'/>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-  <link rel="stylesheet" href="css/vitaminc.css" type="text/css"/>
-  <title>Phân phối | Vitamin C tự nhiên</title>
+  <link rel="stylesheet" href="css/ngocdon.css" type="text/css"/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <title>Phân phối | Ngọc Đơn</title>
     <!--[if lte IE 9]>
     <script src="js/html5.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/ie9.css" type="text/css"/>
@@ -14,59 +15,45 @@
   <script src="js/modernizr.js" type="text/javascript"></script>
 </head>
 <body>
-  <section class="menuIcon">
-    <div class="listIcons">
-      <ul>
-        <li>
-          <a href="#" class="iSearch">Search</a>
-          <div class="box-find" id="box-find">
-            <form>
-              <input type="text" placeholder="Từ khóa tìm kiếm" name="keyword" class="txt"/>
-              <input type="submit" value="" name="submit" class="btn-find"/>
-            </form>
-          </div>
-        </li>
-        <li><a href="#" class="iYou">Youtube</a></li>
-        <li><a href="#" class="iSkype">Skype</a></li>
-        <li><a href="#" class="iGoogle">Google</a></li>
-      </ul>
-    </div>
-  </section>
-  <div class="hotLine sp">
-    <img src="imgs/hot.png" alt="Hot">
-  </div>
   <header class="header">
     <div class="container">
-      <h1>
-        <a href="#" class="logo" title="Logo">
-          <img src="imgs/logo.png" alt="Vitamin C" width="225" height="125" class="pc">
-          <img src="imgs/logosp.png" alt="Vitamin C" width="295" height="100" class="sp">
-        </a>
-      </h1>
-      <ul id="globalNav" class="pc">
-        <li><a href="index.html">Trang chủ</a></li>
-        <li><a href="ctunhien.html">VITAMIN C<br>TỰ NHIÊN</a></li>
-        <li>
-          <a href="vitamin.html">Vitamin C</a>
-          <ul>
-            <li><a href="cNattu.html">C NATTU</a></li>
-            <li><a href="ckids.html">C NATTU KIDS</a></li>
-          </ul>
-        </li>
-        <li><a href="tintuc.html" class="active">Tin tức</a></li>
-        <li>
-          <a href="methongthai.html">GÓC MẸ <br>THÔNG THÁI</a>
-          <ul>
-            <li><a href="">Bệnh trẻ thường gặp</a></li>
-            <li><a href="">Dược liệu</a></li>
-            <li><a href="">Nghiên cứu lâm sàng</a></li>
-          </ul>
-        </li>
-        <li><a href="videos.html">Videos</a></li>
-        <li><a href="cauhoi.html">CÂU HỎI <br>THƯỜNG GẶP</a></li>
-        <li><a href="lienhe.html">Liên hệ</a></li>
-      </ul>
+      <div class="panelTop">
+        <form action="search" method="post">
+          <div class="boxSearch">
+            <input type="text" name="yourName" placeholder="Nội dung tìm kiếm">
+          </div>
+        </form>
+        <ul class="navSocial pc">
+          <li>
+            <a href="#" class="fb">Facebook</a>
+          </li>
+          <li><a href="#" class="yu">Youtube</a></li>
+        </ul>
+      </div>
       <a href="#" title="Menu" class="sp btnMenu" id="btnMenu">Menu</a>
+    </div>
+    <div class="headerNav">
+      <div class="navGlobal">
+        <div class="container">
+          <ul id="navGlobal" class="navGlobal pc clearFix">
+            <li><a href="index.html" class="current">Trang chủ</a></li>
+            <li>
+              <a href="biquyetlamdep.html">Bí quyết làm đẹp</a>
+            </li>
+            <li><a href="sanpham.html">Sản phẩm</a></li>
+            <li><a href="chiase.html">Chia sẻ</a></li>
+            <li><a href="sukien.html">Sự kiện</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="diemban.html">Điểm bán</a></li>
+            <li><a href="lienhe.html">Liên hệ</a></li>
+          </ul>
+          <h1>
+            <a href="#" class="logo" title="logo">
+              <img src="imgs/logo.png" alt="Logo" width="211" height="67">
+            </a>
+          </h1>
+        </div>
+      </div>
     </div>
   </header>
   <!-- /endHeader -->
@@ -75,81 +62,136 @@
       <div class="owl-carousel" id="slideHomepage">
         <div class="item">
           <a class="thumb" href="" title="">
-            <img src="imgs/temp/banner01.jpg"/>
+            <img src="imgs/temp/bg01.jpg"/>
           </a>
         </div>
         <div class="item">
           <a class="thumb" href="" title="">
-            <img src="imgs/temp/banner01.jpg"/>
+            <img src="imgs/temp/bg01.jpg"/>
           </a>
         </div>
       </div>
     </div>
-    <!--//box-Banner-->
   </section>
-  <section class="section vis">
+  <section class="layoutHome">
     <div class="container">
-      <div class="contentLeft">
+      <div class="layoutLeft">
         <ul class="breadCrumb clearFix">
-          <li><a href="#">Trang chủ</a></li>
-          <li><a href="#">Phân phối</a></li>
-          <li class="active">Phân phối chi tiết</li>
+          <li class="active">
+            <a href="#">Trang chủ</a>
+          </li>
+          <li><a href="phanphoi.html">Phân phối</a></li>
+          <li>Phân phối chi tiết</li>
         </ul>
-        <div class="boxDetails">
-          <div class="headBox">
-            <h3 class="titleBox">Hệ thống phân phối của CKids tại Hà nội</h3>
+        <div class="boxDetail">
+          <h2 class="titlePost">
+            Miền bắc / Hà Nội
+          </h2>
+          <p>
+            Sức khoẻ và sự phát triển trí não trong những năm đầu đời là nền tảng cho sự phát triển toàn diện của trẻ. Ở giai đoạn này các cơ quan trong cơ thể phát triển rất nhanh về cấu trúc và chức năng, trẻ cần một chế độ chăm sóc và hỗ trợ dinh dưỡng kịp thời. Vì vậy, đây là cơ hội tốt để bổ sung những dưỡng chất cần thiết nhằm tăng cường khả năng phát triển, đảm bảo một tương lai tương sáng cho trẻ. Cốm vi sinh Bio-acimin Gold với thành phần gồm hàng triệu vi khuẩn có lợi, cùng vitamin, acid amin và các khoáng chất thiết yếu cho đường ruột khỏe mạnh, giúp giải quyết hiệu quả tình trạng rối loạn tiêu hóa và kích thích trẻ ăn ngon một cách tự nhiên. Kết quả Nghiên cứu lâm sàng cho thấy cốm vi sinh Bio-acimin Gold giúp:
+          </p>
+          <div class="boxAdv">
+            <a href="#">
+              <img src="imgs/temp/adv01.jpg" alt="">
+            </a>
           </div>
-          <p>
-            Men vi sinh hay còn gọi là Probiotic là những vi khuẩn sống có lợi cho đường ruột, khi được sử dụng một lượng thích hợp sẽ có lợi cho sức khỏe con người (Theo tổ chức FAO-WHO). Probiotic đã được ứng dụng điều trị từ rất lâu trong nhiều trường hợp như: Điều trị tiêu chảy do Viêm dạ dày – ruột, Điều trị và dự phòng tiêu chảy do sử dụng kháng sinh, Dự phòng tiêu chảy tái phát do Clostridium difficile, Điều trị cơn đau quặn bụng ở trẻ nhỏ…
-          </p>
-          <p>
-            GS.TS Nguyễn Gia Khánh (Phó chủ tịch Hội nhi khoa Việt Nam) cho biết “Hiện nay, có rất nhiều các chủng men vi sinh khác nhau, tuy nhiên không phải loại nào cũng giống loại nào mà mỗi chủng lại có một tác dụng riêng rẽ và không phải cứ là men vi sinh thì có tác dụng giống nhau, để kết luận được tác dụng của chủng men vi sinh nhất thiết phải qua thực tế điều trị hoặc kiểm nghiệm lâm sàng”. Thực tế, hiện nay trên thị trường có rất nhiều các chế phẩm men vi sinh, nhưng không phải sản phẩm nào cũng đạt được đủ những tiêu chuẩn về việc lựa chọn chủng Probiotic. Vì vậy, trước khi lựa chọn men vi sinh, các chuyên gia cũng khuyến cáo người tiêu dùng nên tìm hiểu kĩ về chủng men vi sinh dùng nhằm sử dụng cho đúng mục đích.
-          </p>
-          <p style="text-align: center">
-            <img src="imgs/temp/product01.jpg" alt="">
-          </p>
-          <p>
-            Men vi sinh hay còn gọi là Probiotic là những vi khuẩn sống có lợi cho đường ruột, khi được sử dụng một lượng thích hợp sẽ có lợi cho sức khỏe con người (Theo tổ chức FAO-WHO). Probiotic đã được ứng dụng điều trị từ rất lâu trong nhiều trường hợp như: Điều trị tiêu chảy do Viêm dạ dày – ruột, Điều trị và dự phòng tiêu chảy do sử dụng kháng sinh, Dự phòng tiêu chảy tái phát do Clostridium difficile, Điều trị cơn đau quặn bụng ở trẻ nhỏ…
-          </p>
-          <!-- /endTab03 -->
-        </div>
-        <div class="boxTags">
-          <span>Từ khóa</span>
-          <a href="" title="">Thuốc diệt chuột</a>
-          <a href="" title="">Thuốc tốt</a>
-          <a href="" title="">Thuốc hay</a>
-        </div>
-        <div class="boxComment">
-          <div class="fb-comments" data-href="https://www.facebook.com/tuelinh.vn" data-numposts="5"></div>
         </div>
       </div>
-      <div class="contentRight">
+      <div class="layoutRight">
+        <div class="boxAdv">
+          <a href="#">
+            <img src="imgs/temp/contact.jpg" alt="">
+          </a>
+        </div>
+        <div class="boxAdv">
+          <a href="phanphoi.html">
+            <img src="imgs/temp/dis.jpg" alt="">
+          </a>
+        </div>
         <div class="boxVideo">
           <h3 class="globalTitle">
-            <a href="#">Góc Video</a>
+            Góc Video
           </h3>
-          <div class="content">
-            <iframe width="100%" height="250" src="https://www.youtube.com/embed/4QEmJ3sPHIg" frameborder="0" allowfullscreen></iframe>
-            <ul class="listVideo">
-              <li><a href="#">Giải đáp các thắc mắc của Mẹ trong quá  trình mang thai và chăm </a></li>
-              <li><a href="#">Giải đáp các thắc mắc của Mẹ trong quá  trình mang thai và chăm </a></li>
-              <li><a href="#">Giải đáp các thắc mắc của Mẹ trong quá  trình mang thai và chăm </a></li>
-            </ul>
+          <div class="listVideo">
+            <div class="videoScreen">
+              <iframe width="100%" height="200" src="https://www.youtube.com/embed/4QEmJ3sPHIg" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="item">
+              <a href="#" class="thumb">
+                <img src="imgs/temp/thumbVideo.jpg" alt="">
+              </a>
+              <h3>
+                <a href="#">Phương pháp giúp quý ông luôn khỏe moạnh</a>
+              </h3>
+              <p class="view">333 lượt xem</p>
+            </div>
+            <div class="item">
+              <a href="#" class="thumb">
+                <img src="imgs/temp/thumbVideo.jpg" alt="">
+              </a>
+              <h3>
+                <a href="#">Phương pháp giúp quý ông luôn khỏe moạnh</a>
+              </h3>
+              <p class="view">333 lượt xem</p>
+            </div>
           </div>
         </div>
-        <div class="boxSale">
-          <h3 class="globalTitle">
-           <a href="#">Cộng đồng mẹ thông thái</a>
-          </h3>
+        <div class="boxSocial">
           <div class="Social">
             <div class="fb-page" data-href="https://www.facebook.com/tuelinh.vn" data-width="100%" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/tuelinh.vn"><a href="https://www.facebook.com/tuelinh.vn">Tuệ Linh</a></blockquote></div></div>
+          </div>
+        </div>
+        <div class="boxNews">
+          <h3 class="globalTitle">
+            Tin nổi bật
+          </h3>
+          <div class="listNews">
+            <div class="item clearFix">
+              <a href="#" class="thumb">
+                <img src="imgs/temp/thumbVideo.jpg" alt="">
+              </a>
+              <h3>
+                <a href="#">Phương pháp giúp quý ông luôn khỏe moạnh</a>
+              </h3>
+            </div>
+            <div class="item clearFix">
+              <a href="#" class="thumb">
+                <img src="imgs/temp/thumbVideo.jpg" alt="">
+              </a>
+              <h3>
+                <a href="#">Phương pháp giúp quý ông luôn khỏe moạnh</a>
+              </h3>
+            </div>
+            <div class="item clearFix">
+              <a href="#" class="thumb">
+                <img src="imgs/temp/thumbVideo.jpg" alt="">
+              </a>
+              <h3>
+                <a href="#">Phương pháp giúp quý ông luôn khỏe moạnh</a>
+              </h3>
+            </div>
+            <div class="item clearFix">
+              <a href="#" class="thumb">
+                <img src="imgs/temp/thumbVideo.jpg" alt="">
+              </a>
+              <h3>
+                <a href="#">Phương pháp giúp quý ông luôn khỏe moạnh</a>
+              </h3>
+            </div>
+            <div class="item clearFix">
+              <a href="#" class="thumb">
+                <img src="imgs/temp/thumbVideo.jpg" alt="">
+              </a>
+              <h3>
+                <a href="#">Phương pháp giúp quý ông luôn khỏe moạnh</a>
+              </h3>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <!-- /endSection -->
-  <footer class="footer">
+  <footer class="footer" id="footer">
     <div class="container">
       <div class="boxFooter clearFix">
         <div class="areaSocial">
@@ -174,14 +216,6 @@
         </div>
        </div>
     </div>
-    <div class="copyRight">
-      <div class="container">
-        <p class="copy">MỌI THÔNG TIN ĐỀU BẢN QUYỀN ĐỀU THUỘC VỀ CÔNG TY TNHH TUỆ LINH</p>
-        <p class="address">
-          Tầng 5, Tòa nhà 29 T1 - Hoàng Đạo Thúy - Trung Hòa - Cầu Giấy - Hà Nội- Điện thoại: (04) 62824344 - Fax: 04.62824263
-        </p>
-      </div>
-    </div>
   </footer>
   <!-- /endboxNews -->
   <div id="fb-root"></div>
@@ -194,10 +228,10 @@
     }(document, 'script', 'facebook-jssdk'));
   </script>
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-  <script src="js/wow.min.js"></script>
-  <script type="text/javascript" src="js/fixedsidebar.js"></script>
   <script type="text/javascript" src="js/jquery.matchHeight-min.js"></script>
+  <script type="text/javascript" src="js/jquery.responsiveTabs.min.js"></script>
   <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+  <script type="text/javascript" src="js/fixedsidebar.js"></script>
   <script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>

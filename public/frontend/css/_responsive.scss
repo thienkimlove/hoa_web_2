@@ -10,10 +10,7 @@
   .container {
     padding: 0 20px;
   }
-  .menuIcon {
-    display: none;
-  }
-  #globalNav {
+  #navGlobal {
     float: left;
     width: 100%;
     margin-bottom: 10px;
@@ -21,199 +18,76 @@
       width: 100%;
       text-align: center;
       margin: 5px 0;
-      &:before {
-        display: none;
+    }
+  }
+  .boxTabs {
+    .tabContent {
+      @include border-radius(5px);
+      .thumb {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+      }
+      &:after {
+        @include border-radius(5px);
       }
     }
   }
-  .boxBanner {
-    height: auto;
-  }
-  .contentLeft, .contentRight {
-    width: 100%;
-  }
-  .boxConsult {
-    .formConsult {
-      width: 100%;
+  .navSocial {
+    text-align: center;
+    margin-bottom: 10px;
+    li {
+      display: inline-block;
+      float: none;
     }
   }
-  .boxSale,.boxConsult {
-    a {
-      text-align: center;
-    }
-  }
-  .boxAdv {
+  .r-tabs .r-tabs-nav {
     display: none;
   }
-  .tabProduct {
-    .thumb {
-    float: none;
-    margin-right: 0;
-    margin-bottom: 10px;
+
+  .r-tabs .r-tabs-accordion-title {
     display: block;
-    text-align: center;
-    }
-  }
-  .footer {
-    .boxFooter {
-      .item {
-        &.itemLeft,&.itemMid,&.itemRight {
-          width: 100%;
-          margin-right: 0;
-          text-align: center;
-        }
-      }
-    }
-    .listSocial {
-      text-align: center;
-      margin-bottom: 10px;
-      li {
-        float: none;
-        display: inline-block;
-      }
-    }
   }
 }
-@media only screen and (max-width:640px){
-/* Styles */
-  /* body {
-    overflow-y: auto;
-  } */
-  .breadCrumb {
+@media only screen and (max-width: 640px){
+  .header {
+    height: auto;
+  }
+  .boxPromo,.panelTop {
     display: none;
   }
-  .section {
-    &.vis {
-      overflow: hidden;
-    }
+  .layoutLeft {
+    width: 100%;
+    margin-right: 0;
   }
-  #globalNav {
-    padding-left: 0;
-    padding-top: 0;
-    margin-top: 0;
-    li {
-      display: inherit;
-      border: none;
-    }
+  .layoutRight {
+    width: 100%;
   }
-  .header {
-    position: relative;
-    overflow: hidden;
-    min-height: inherit;
-    margin-bottom: 10px;
-    .logo {
-      float: left;
-      position: relative;
-      padding-top: 40px;
-      padding-bottom: 10px;
-    }
-  }
-  .boxIntro {
-    .areaImgs {
-      display: none;
-    }
-    .listIntro {
-      display: block;
-    }
-  }
-  .boxBanner {
-    padding-top: 0;
-    .owl-nav {
-      display: none;
-    }
-  }
-  .boxSlidePage,.boxIntro {
-    .globalTitle {
-      font-size: 22px;
-      .bgLight {
-        &:before, &:after {
-          display: none;
+  .boxTabs {
+    .tabContent {
+      .item {
+        width: 100%;
+        padding : 10px 0;
+        h3 {
+          padding: 0;
         }
       }
     }
   }
-  .tabs, .proTabs {
-    position: relative;
-    top: 0;
-    left: 0;
-    li {
-      border-radius: 0px;
-    }
+  .footer .listSocial li {
+    margin-right: 20px;
   }
-  .fixedSide {
-    position: relative;
-    top: 0;
-    width: auto;
+  #sideBar.fixed, #sideBar {
+    position: relative !important;
+    top: 0 !important;
   }
+}
+@media only screen and (max-width:480px){
+/* Styles */
   .container {
     padding: 0 10px;
   }
-  .search {
-    display: none;
-  }
-  .boxNews {
-    > .thumb {
-      width: 100%;
-    }
-    .listNews {
-      float: left;
-      width: 100%;
-      .item {
-        width: 100%;
-      }
-    }
-  }
-}
-@media only screen and (max-width:480px) {
-  .boxBanner {
-    /* display: none; */
-  }
-  .boxNews {
-    .listNews {
-      .thumb {
-        float: none;
-        margin-right: 0;
-        display: block;
-        text-align: center;
-      }
-    }
-  }
-  .boxSlidePage {
-    .globalTitle {
-      .bgLight {
-        &:after,&:before {
-          content: none;
-        }
-      }
-    }
-  }
-  .boxMedia {
-    .thumbVideo {
-      width: 100%;
-      margin-right: 0;
-    }
-    .listVideo {
-      float: left;
-      width: 100%;
-    }
-  }
-  .boxProducts .proTabs li,.tabs li, .proTabs li {
-    width: 100%;
-  }
-  .boxContact .item {
-    width: 100%;
-  }
-  .boxPaging {
-    text-align: center;
-  }
-  .boxPaging .navPaging li a {
-    padding: 0 10px;
-  }
-}
-@media only screen and (max-width:320px) {
-  .boxMedia {
-    .item {
-      width: 100%;
-    }
+  .boxTabs {
+    padding-bottom: 15px;
   }
 }

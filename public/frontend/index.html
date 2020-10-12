@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="vi" class="no-js">
+<html lang="en" class="no-js">
 <head>
   <meta content='text/html; charset=utf-8' http-equiv='Content-Type'/>
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-  <link rel="stylesheet" href="css/vitaminc.css" type="text/css"/>
-  <title>Home | Vitamin C</title>
+  <link rel="stylesheet" href="css/ngocdon.css" type="text/css"/>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+  <title>Home | Ngọc Đơn</title>
     <!--[if lte IE 9]>
     <script src="js/html5.js" type="text/javascript"></script>
     <link rel="stylesheet" href="css/ie9.css" type="text/css"/>
@@ -14,434 +15,434 @@
   <script src="js/modernizr.js" type="text/javascript"></script>
 </head>
 <body>
-  <div class="menuIcon pc">
-    <div class="listIcons">
-      <ul>
-        <li>
-          <a href="#" class="iSearch">Search</a>
-          <div class="box-find" id="box-find">
-            <form>
-              <input type="text" placeholder="Từ khóa tìm kiếm" name="keyword" class="txt"/>
-              <input type="submit" value="" name="submit" class="btn-find"/>
-            </form>
-          </div>
-        </li>
-        <li><a href="#" class="iYou">Youtube</a></li>
-        <li><a href="#" class="iSkype">Skype</a></li>
-        <li><a href="#" class="iGoogle">Google</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="hotLine sp">
-    <img src="imgs/hot.png" alt="Hot">
-  </div>
   <header class="header">
     <div class="container">
-      <h1 class="clearFix">
-        <a href="#" class="logo" title="Logo">
-          <img src="imgs/logo.png" alt="Vitamin C" width="225" height="125" class="pc">
-          <img src="imgs/logosp.png" alt="Vitamin C" width="295" height="100" class="sp">
-        </a>
-      </h1>
-       <ul id="globalNav" class="pc">
-        <li><a href="index.html" class="active">Trang chủ</a></li>
-        <li><a href="ctunhien.html">VITAMIN C<br>TỰ NHIÊN</a></li>
-        <li>
-          <a href="vitamin.html">Vitamin C</a>
-          <ul>
-            <li><a href="cNattu.html">C NATTU</a></li>
-            <li><a href="ckids.html">C NATTU KIDS</a></li>
-          </ul>
-        </li>
-        <li><a href="tintuc.html">Tin tức</a></li>
-        <li>
-          <a href="methongthai.html">GÓC MẸ <br>THÔNG THÁI</a>
-          <ul>
-            <li><a href="">Bệnh trẻ thường gặp</a></li>
-            <li><a href="">Dược liệu</a></li>
-            <li><a href="">Nghiên cứu lâm sàng</a></li>
-          </ul>
-        </li>
-        <li><a href="videos.html">Videos</a></li>
-        <li><a href="cauhoi.html">CÂU HỎI <br>THƯỜNG GẶP</a></li>
-        <li><a href="lienhe.html">Liên hệ</a></li>
-      </ul>
+      <div class="panelTop">
+        <form action="search" method="post">
+          <div class="boxSearch">
+            <input type="text" name="yourName" placeholder="Nội dung tìm kiếm">
+          </div>
+        </form>
+        <ul class="navSocial pc">
+          <li>
+            <a href="#" class="fb">Facebook</a>
+          </li>
+          <li><a href="#" class="yu">Youtube</a></li>
+        </ul>
+      </div>
       <a href="#" title="Menu" class="sp btnMenu" id="btnMenu">Menu</a>
+    </div>
+    <div class="headerNav">
+      <div class="navGlobal">
+        <div class="container">
+          <ul id="navGlobal" class="navGlobal pc clearFix">
+            <li><a href="index.html" class="current">Trang chủ</a></li>
+            <li>
+              <a href="biquyetlamdep.html">Bí quyết làm đẹp</a>
+              <ul class="hasSub">
+                <li><a href="thucdongiamcan.html">Thực đơn giảm cân</a></li>
+                <li><a href="tapluyengiamcan.html">Tập luyện giảm cân</a></li>
+                <li><a href="tuvangiamcan.html">Tư vấn giảm cân</a></li>
+              </ul>
+            </li>
+            <li><a href="sanpham.html">Sản phẩm</a></li>
+            <li><a href="chiase.html">Chia sẻ</a></li>
+            <li><a href="sukien.html">Sự kiện</a></li>
+            <li><a href="video.html">Video</a></li>
+            <li><a href="diemban.html">Điểm bán</a></li>
+            <li><a href="lienhe.html">Liên hệ</a></li>
+          </ul>
+          <h1>
+            <a href="#" class="logo" title="logo">
+              <img src="imgs/logo.png" alt="Logo" width="211" height="67">
+            </a>
+          </h1>
+        </div>
+      </div>
     </div>
   </header>
   <!-- /endHeader -->
   <section class="boxBanner">
     <div class="boxSlider">
-      <div class="owl-carousel" id="slideIndex">
+      <div class="owl-carousel" id="slideHomepage">
         <div class="item">
           <a class="thumb" href="" title="">
-            <img src="imgs/temp/banner02.jpg"/>
+            <img src="imgs/temp/bg01.jpg"/>
           </a>
         </div>
         <div class="item">
           <a class="thumb" href="" title="">
-            <img src="imgs/temp/banner02.jpg"/>
+            <img src="imgs/temp/bg01.jpg"/>
           </a>
         </div>
       </div>
     </div>
-    <!--//box-Banner-->
   </section>
-  <!-- /endBanner -->
-  <section class="section">
+  <section class="boxFeature">
     <div class="container">
-      <!-- <img src="imgs/Trang-chu.jpg" alt=""> -->
-      <div class="boxIntro">
-        <h3 class="globalTitle wow fadeIn" data-wow-duration="0.8s" data-wow-delay="1s">
-          <a href="#">Vitamin C tự nhiên từ
-            <span class="highLight">ACEROLA CHERRY</span>
-            <span class="bgLight">
-              có gì khác biệt ?
-            </span>
-          </a>
-        </h3>
-        <div class="areaImgs">
-          <div class="imgNumber imgN01 wow zoom-in" data-scroll-reveal="enter top, after 0.8s">
-            <div class="contentImg">
-              <h3>Vitamin C Tự nhiên</h3>
-              <p>
-                C NATTU KIDS là sản phẩm đầu tiên sử dụng vitamin C tự nhiên từ acerola cherry
-              </p>
-            </div>
-          </div>
-          <div class="imgNumber imgN02 wow zoom-in" data-scroll-reveal="enter bottom, after 0.8s">
-            <div class="contentImg">
-              <h3>Vitamin C Tự nhiên</h3>
-              <p>
-                C NATTU KIDS là sản phẩm đầu tiên sử dụng vitamin C tự nhiên từ acerola cherry
-              </p>
-            </div>
-          </div>
-          <div class="imgNumber imgN03 wow zoom-in" data-scroll-reveal="enter top, after 0.8s">
-            <div class="contentImg">
-              <h3>Vitamin C Tự nhiên</h3>
-              <p>
-                C NATTU KIDS là sản phẩm đầu tiên sử dụng vitamin C tự nhiên từ acerola cherry
-              </p>
-            </div>
-          </div>
-          <div class="imgNumber imgN04 wow zoom-in" data-scroll-reveal="enter bottom, after 0.8s">
-            <div class="contentImg">
-              <h3>Vitamin C Tự nhiên</h3>
-              <p>
-                C NATTU KIDS là sản phẩm đầu tiên sử dụng vitamin C tự nhiên từ acerola cherry
-              </p>
-            </div>
-          </div>
-          <div class="imgNumber imgN05 wow zoom-in" data-scroll-reveal="enter top, after 0.8s">
-            <div class="contentImgR">
-              <h3>Vitamin C Tự nhiên</h3>
-              <p>
-                C NATTU KIDS là sản phẩm đầu tiên sử dụng vitamin C tự nhiên từ acerola cherry
-              </p>
-            </div>
-          </div>
-          <div class="imgNumber imgN06 wow zoom-in" data-scroll-reveal="enter bottom, after 0.8s">
-            <div class="contentImgR">
-              <h3>Vitamin C Tự nhiên</h3>
-              <p>
-                C NATTU KIDS là sản phẩm đầu tiên sử dụng vitamin C tự nhiên từ acerola cherry
-              </p>
-            </div>
-          </div>
-          <div class="imgNumber imgN07 wow zoom-in" data-scroll-reveal="enter top, after 0.8s">
-            <div class="contentImgR">
-              <h3>Vitamin C Tự nhiên</h3>
-              <p>
-                C NATTU KIDS là sản phẩm đầu tiên sử dụng vitamin C tự nhiên từ acerola cherry
-              </p>
-            </div>
-          </div>
-          <div class="imgNumber imgN08 wow zoom-in" data-scroll-reveal="enter bottom, after 0.8s">
-            <div class="contentImgR">
-              <h3>Vitamin C Tự nhiên</h3>
-              <p>
-                C NATTU KIDS là sản phẩm đầu tiên sử dụng vitamin C tự nhiên từ acerola cherry
-              </p>
-            </div>
-          </div>
-          <div class="centerImg wow zoom-in" data-scroll-reveal="enter top, after 0.8s">
-            <img src="imgs/bg/spCenterHome.png" class="" alt="" width="670" height="735">
-          </div>
-          <div class="botImg wow wow zoom-in" data-scroll-reveal="enter bottom, after 0.8s">
-            <img src="imgs/bg/spBotHome.png" alt="" width="414" height="230">
-          </div>
-        </div>
-        <div class="listIntro">
-          <div class="item clearFix">
-            <div class="number">
-              <span>1</span>
-            </div>
-            <div class="contentIntro">
-              <h3>Vitamin C</h3>
-              <p>C NATTU KIDS là sản phẩm đầu tiên sử dụng vitamin C tự nhiên từ acerola cherry</p>
-            </div>
-          </div>
-          <!-- //end -->
-          <div class="item clearFix">
-            <div class="number">
-              <span>2</span>
-            </div>
-            <div class="contentIntro">
-              <h3>Vitamin C</h3>
-              <p>C NATTU KIDS là sản phẩm đầu tiên sử dụng vitamin C tự nhiên từ acerola cherry</p>
-            </div>
-          </div>
-          <!-- //end -->
-          <div class="item clearFix">
-            <div class="number">
-              <span>3</span>
-            </div>
-            <div class="contentIntro">
-              <h3>Vitamin C</h3>
-              <p>C NATTU KIDS là sản phẩm đầu tiên sử dụng vitamin C tự nhiên từ acerola cherry</p>
-            </div>
-          </div>
-          <!-- //end -->
-          <div class="item clearFix">
-            <div class="number">
-              <span>4</span>
-            </div>
-            <div class="contentIntro">
-              <h3>Vitamin C</h3>
-              <p>C NATTU KIDS là sản phẩm đầu tiên sử dụng vitamin C tự nhiên từ acerola cherry</p>
-            </div>
-          </div>
-          <!-- //end -->
-          <div class="item clearFix">
-            <div class="number">
-              <span>5</span>
-            </div>
-            <div class="contentIntro">
-              <h3>Vitamin C</h3>
-              <p>C NATTU KIDS là sản phẩm đầu tiên sử dụng vitamin C tự nhiên từ acerola cherry</p>
-            </div>
-          </div>
-          <!-- //end -->
-          <div class="item clearFix">
-            <div class="number">
-              <span>6</span>
-            </div>
-            <div class="contentIntro">
-              <h3>Vitamin C</h3>
-              <p>C NATTU KIDS là sản phẩm đầu tiên sử dụng vitamin C tự nhiên từ acerola cherry</p>
-            </div>
-          </div>
-          <!-- //end -->
-          <div class="item clearFix">
-            <div class="number">
-              <span>7</span>
-            </div>
-            <div class="contentIntro">
-              <h3>Vitamin C</h3>
-              <p>C NATTU KIDS là sản phẩm đầu tiên sử dụng vitamin C tự nhiên từ acerola cherry</p>
-            </div>
-          </div>
-          <!-- //end -->
-          <div class="item clearFix">
-            <div class="number">
-              <span>8</span>
-            </div>
-            <div class="contentIntro">
-              <h3>Vitamin C</h3>
-              <p>C NATTU KIDS là sản phẩm đầu tiên sử dụng vitamin C tự nhiên từ acerola cherry</p>
-            </div>
-          </div>
-          <div class="item">
-            <img src="imgs/bg/spBotHome.png" alt="">
-          </div>
-          <!-- //end -->
-        </div>
-      </div>
-    </div>
-  </section>
-  <section class="boxSlidePage bg">
-    <div class="container">
-      <h3 class="globalTitle noneAfter">
-        <a href="#">Tăng 
-          <span class="highLight">Đề kháng</span>
-          <span class="bgLight">
-            Cho cả gia đình
-          </span>
+      <article class="item borderLeft">
+        <a href="#" class="thumb" title="Feature One">
+          <img src="imgs/temp/f1.jpg" alt="Feature One" width="285" height="150">
         </a>
-      </h3>
-      <div class="listSlidePage clearFix">
-        <div class="owl-carousel" id="slidePage">
-          <div class="item wow slideInLeft" data-wow-duration="0.8s" data-wow-delay="1s">
-            <a href="" title="">
-              <img src="imgs/temp/share01.jpg" width="274" height="174" alt=""/>
+      </article>
+      <article class="item">
+        <a href="#" class="thumb" title="Feature Two">
+          <img src="imgs/temp/f2.jpg" alt="Feature Two" width="285" height="150">
+        </a>
+      </article>
+      <article class="item borderRight">
+        <a href="#" class="thumb" title="Feature Three">
+          <img src="imgs/temp/f3.jpg" alt="Feature Three" width="285" height="150">
+        </a>
+      </article>
+    </div>
+  </section>
+  <section class="boxTabs">
+    <div class="container">
+      <div id="horizontalTab">
+        <ul class="navTabs clearFix">
+          <li>
+            <a href="#tab01" title="Tab01">Bí quyết làm đẹp</a>
+          </li>
+          <li>
+            <a href="#tab02" title="Tab02">Thực đơn giảm cân</a>
+          </li>
+          <li>
+            <a href="#tab03" title="Tab03">Tập luyện giảm cân</a>
+          </li>
+          <li>
+            <a href="#tab04" title="Tab04">Tư vấn giảm cân</a>
+          </li>
+        </ul>
+        <article class="tabContent clearFix" id="tab01">
+          <div class="item clearFix">
+            <a href="#" class="thumb">
+              <img src="imgs/temp/thumb01.jpg" alt="Tab01" width="320" height="225">
             </a>
             <h3>
-              <a href="#">
-                HỆ MIỄN DỊCH KHÔNG PHẢI LÀ THỨ CÓ SẴN
-              </a>
+              Bông astiso thông tiểu mát gan, lợi mật, rất tốt cho sức khỏe
             </h3>
             <p>
-              Bên cạnh sự cân đối 4 nhóm vi chất dinh dưỡng thì phụ huynh cũng cần lưu tâm đến việc bổ sung các dưỡng chất tăng cường hệ miễn dịch cho trẻ. đến việc bổ sung các dưỡng chất tăng cường hệ miễn dịch cho trẻ.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
-          <div class="item wow slideInLeft" data-wow-duration="0.8s" data-wow-delay="1s">
-            <a href="" title="">
-              <img src="imgs/temp/share01.jpg" width="274" height="174" alt=""/>
+          <div class="item clearFix">
+            <a href="#" class="thumb">
+              <img src="imgs/temp/thumb02.jpg" alt="Tab02" width="320" height="225">
             </a>
             <h3>
-              <a href="#">
-                HỆ MIỄN DỊCH KHÔNG PHẢI LÀ THỨ CÓ SẴN
-              </a>
+              Bông astiso thông tiểu mát gan, lợi mật
             </h3>
             <p>
-              Bên cạnh sự cân đối 4 nhóm vi chất dinh dưỡng thì phụ huynh cũng cần lưu tâm đến việc bổ sung các dưỡng chất tăng cường hệ miễn dịch cho trẻ. đến việc bổ sung các dưỡng chất tăng cường hệ miễn dịch cho trẻ.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
-          <div class="item wow slideInRight" data-wow-duration="1s" data-wow-delay="1s">
-            <a href="" title="">
-              <img src="imgs/temp/share01.jpg" width="274" height="174" alt=""/>
+          <div class="item clearFix">
+            <div class="itemTab clearFix">
+              <a href="#" class="thumbImg">
+                <img src="imgs/temp/thumbListTab.jpg" alt="">
+              </a>
+              <h3>
+                <a href="#">
+                  Kinh giới tuệ - Vị thuốc giải mẫn cảm, ngăn ngừa viêm xoang mũi tái phát
+                </a>
+              </h3>
+            </div>
+            <div class="itemTab clearFix">
+              <a href="#" class="thumbImg">
+                <img src="imgs/temp/thumbListTab.jpg" alt="">
+              </a>
+              <h3>
+                <a href="#">
+                  Kinh giới tuệ - Vị thuốc giải mẫn cảm, ngăn ngừa viêm xoang mũi tái phát
+                </a>
+              </h3>
+            </div>
+            <div class="itemTab clearFix">
+              <a href="#" class="thumbImg">
+                <img src="imgs/temp/thumbListTab.jpg" alt="">
+              </a>
+              <h3>
+                <a href="#">
+                  Kinh giới tuệ - Vị thuốc giải mẫn cảm, ngăn ngừa viêm xoang mũi tái phát
+                </a>
+              </h3>
+            </div>
+          </div>
+        </article>
+        <article class="tabContent clearFix" id="tab02">
+          <div class="item clearFix">
+            <a href="#" class="thumb">
+              <img src="imgs/temp/thumb01.jpg" alt="Tab01" width="320" height="225">
             </a>
             <h3>
-              <a href="#">
-                HỆ MIỄN DỊCH KHÔNG PHẢI LÀ THỨ CÓ SẴN
-              </a>
+              2 Bông astiso thông tiểu mát gan, lợi mật, rất tốt cho sức khỏe
             </h3>
             <p>
-              Bên cạnh sự cân đối 4 nhóm vi chất dinh dưỡng thì phụ huynh cũng cần lưu tâm đến việc bổ sung các dưỡng chất tăng cường hệ miễn dịch cho trẻ. đến việc bổ sung các dưỡng chất tăng cường hệ miễn dịch cho trẻ.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
-          <div class="item wow slideInRight" data-wow-duration="1s" data-wow-delay="1s">
-            <a href="" title="">
-              <img src="imgs/temp/share01.jpg" width="274" height="174" alt=""/>
+          <div class="item clearFix">
+            <a href="#" class="thumb">
+              <img src="imgs/temp/thumb02.jpg" alt="Tab02" width="320" height="225">
             </a>
             <h3>
-              <a href="#">
-                HỆ MIỄN DỊCH KHÔNG PHẢI LÀ THỨ CÓ SẴN
-              </a>
+              Bông astiso thông tiểu mát gan, lợi mật
             </h3>
             <p>
-              Bên cạnh sự cân đối 4 nhóm vi chất dinh dưỡng thì phụ huynh cũng cần lưu tâm đến việc bổ sung các dưỡng chất tăng cường hệ miễn dịch cho trẻ. đến việc bổ sung các dưỡng chất tăng cường hệ miễn dịch cho trẻ.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
           </div>
-          <!-- <div class="item">
-            <a href="" title="">
-              <img src="imgs/temp/share01.jpg" width="274" height="174" alt=""/>
+          <div class="item clearFix">
+            <div class="itemTab clearFix">
+              <a href="#" class="thumbImg">
+                <img src="imgs/temp/thumbListTab.jpg" alt="">
+              </a>
+              <h3>
+                <a href="#">
+                  Kinh giới tuệ - Vị thuốc giải mẫn cảm, ngăn ngừa viêm xoang mũi tái phát
+                </a>
+              </h3>
+            </div>
+            <div class="itemTab clearFix">
+              <a href="#" class="thumbImg">
+                <img src="imgs/temp/thumbListTab.jpg" alt="">
+              </a>
+              <h3>
+                <a href="#">
+                  Kinh giới tuệ - Vị thuốc giải mẫn cảm, ngăn ngừa viêm xoang mũi tái phát
+                </a>
+              </h3>
+            </div>
+            <div class="itemTab clearFix">
+              <a href="#" class="thumbImg">
+                <img src="imgs/temp/thumbListTab.jpg" alt="">
+              </a>
+              <h3>
+                <a href="#">
+                  Kinh giới tuệ - Vị thuốc giải mẫn cảm, ngăn ngừa viêm xoang mũi tái phát
+                </a>
+              </h3>
+            </div>
+          </div>
+        </article>
+        <article class="tabContent clearFix" id="tab03">
+          <div class="item clearFix">
+            <a href="#" class="thumb">
+              <img src="imgs/temp/thumb01.jpg" alt="Tab01" width="320" height="225">
             </a>
             <h3>
-              <a href="#">
-                HỆ MIỄN DỊCH KHÔNG PHẢI LÀ THỨ CÓ SẴN
-              </a>
+              3 Bông astiso thông tiểu mát gan, lợi mật, rất tốt cho sức khỏe
             </h3>
             <p>
-              Bên cạnh sự cân đối 4 nhóm vi chất dinh dưỡng thì phụ huynh cũng cần lưu tâm đến việc bổ sung các dưỡng chất tăng cường hệ miễn dịch cho trẻ. đến việc bổ sung các dưỡng chất tăng cường hệ miễn dịch cho trẻ.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
-          </div> -->
-        </div>
+          </div>
+          <div class="item clearFix">
+            <a href="#" class="thumb">
+              <img src="imgs/temp/thumb02.jpg" alt="Tab02" width="320" height="225">
+            </a>
+            <h3>
+              Bông astiso thông tiểu mát gan, lợi mật
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="item clearFix">
+            <div class="itemTab clearFix">
+              <a href="#" class="thumbImg">
+                <img src="imgs/temp/thumbListTab.jpg" alt="">
+              </a>
+              <h3>
+                <a href="#">
+                  Kinh giới tuệ - Vị thuốc giải mẫn cảm, ngăn ngừa viêm xoang mũi tái phát
+                </a>
+              </h3>
+            </div>
+            <div class="itemTab clearFix">
+              <a href="#" class="thumbImg">
+                <img src="imgs/temp/thumbListTab.jpg" alt="">
+              </a>
+              <h3>
+                <a href="#">
+                  Kinh giới tuệ - Vị thuốc giải mẫn cảm, ngăn ngừa viêm xoang mũi tái phát
+                </a>
+              </h3>
+            </div>
+            <div class="itemTab clearFix">
+              <a href="#" class="thumbImg">
+                <img src="imgs/temp/thumbListTab.jpg" alt="">
+              </a>
+              <h3>
+                <a href="#">
+                  Kinh giới tuệ - Vị thuốc giải mẫn cảm, ngăn ngừa viêm xoang mũi tái phát
+                </a>
+              </h3>
+            </div>
+          </div>
+        </article>
+        <article class="tabContent clearFix" id="tab04">
+          <div class="item clearFix">
+            <a href="#" class="thumb">
+              <img src="imgs/temp/thumb01.jpg" alt="Tab01" width="320" height="225">
+            </a>
+            <h3>
+               4 Bông astiso thông tiểu mát gan, lợi mật, rất tốt cho sức khỏe
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="item clearFix">
+            <a href="#" class="thumb">
+              <img src="imgs/temp/thumb02.jpg" alt="Tab02" width="320" height="225">
+            </a>
+            <h3>
+              Bông astiso thông tiểu mát gan, lợi mật
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
+          <div class="item clearFix">
+            <div class="itemTab clearFix">
+              <a href="#" class="thumbImg">
+                <img src="imgs/temp/thumbListTab.jpg" alt="">
+              </a>
+              <h3>
+                <a href="#">
+                  Kinh giới tuệ - Vị thuốc giải mẫn cảm, ngăn ngừa viêm xoang mũi tái phát
+                </a>
+              </h3>
+            </div>
+            <div class="itemTab clearFix">
+              <a href="#" class="thumbImg">
+                <img src="imgs/temp/thumbListTab.jpg" alt="">
+              </a>
+              <h3>
+                <a href="#">
+                  Kinh giới tuệ - Vị thuốc giải mẫn cảm, ngăn ngừa viêm xoang mũi tái phát
+                </a>
+              </h3>
+            </div>
+            <div class="itemTab clearFix">
+              <a href="#" class="thumbImg">
+                <img src="imgs/temp/thumbListTab.jpg" alt="">
+              </a>
+              <h3>
+                <a href="#">
+                  Kinh giới tuệ - Vị thuốc giải mẫn cảm, ngăn ngừa viêm xoang mũi tái phát
+                </a>
+              </h3>
+            </div>
+          </div>
+        </article>
       </div>
     </div>
   </section>
-  <!-- /endboxSlidePage -->
-  <section class="section mb0">
+  <!-- /endboxTabs -->
+  <section class="layoutHome">
     <div class="container">
-      <div class="contentLeft">
-        <!-- /endboxRecommended -->
-        <div class="boxNews clearFix">
-          <h3 class="globalTitle">
-            <a href="#">Tin mới nhất</a>
-          </h3>
-          <div class="listNews clearFix">
+      <div class="layoutLeft">
+        <div class="boxHistory">
+          <div class="globalTitle">
+            Câu chuyện thành công
+          </div>
+          <div class="data owl-carousel" id="slideHistory">
             <div class="item">
-              <a href="#" class="thumb">
-                <img src="imgs/temp/thumb130x80.jpg" alt="List news">
-              </a>
-              <p>
-                Tôi được Dược sỹ tư vấn dùng Imunoglukan P4H® cho cháu 20 tháng tuổi để phòng ngừa cảm cúm. 
-              </p>
-              <span class="datePost">11/01/2016</span>
-              <span class="countView">203 lượt xem</span>
+              <div class="block">
+                <a href="#" class="thumbHistory">
+                  <img src="imgs/temp/thumbHistory.jpg" alt="History" width="340" height="225">
+                </a>
+                <h3>
+                  <a href="#">
+                    Playlist tập hợp 100 ca khúc nổi bật nhất US-UK do nhiều ca sĩ thể hiện
+                  </a>
+                </h3>
+                <p class="authorPost">
+                  Trần Văn Kiên - Hà Nội
+                </p>
+              </div>
             </div>
             <div class="item">
-              <a href="#" class="thumb">
-                <img src="imgs/temp/thumb130x80.jpg" alt="List news">
-              </a>
-              <p>
-                Tôi được Dược sỹ tư vấn dùng Imunoglukan P4H® cho cháu 20 tháng
-              </p>
-              <span class="datePost">11/01/2016</span>
-              <span class="countView">203 lượt xem</span>
+              <div class="block">
+                <a href="#" class="thumbHistory">
+                  <img src="imgs/temp/thumbHistory.jpg" alt="History" width="340" height="225">
+                </a>
+                <h3>
+                  <a href="#">
+                    Playlist tập hợp 100 ca khúc nổi bật nhất US-UK do nhiều ca sĩ thể hiện
+                  </a>
+                </h3>
+                <p class="authorPost">
+                  Trần Văn Kiên - Hà Nội
+                </p>
+              </div>
             </div>
             <div class="item">
-              <a href="#" class="thumb">
-                <img src="imgs/temp/thumb130x80.jpg" alt="List news">
-              </a>
-              <p>
-                Tôi được Dược sỹ tư vấn dùng Imunoglukan P4H® cho cháu 20
-              </p>
-              <span class="datePost">11/01/2016</span>
-              <span class="countView">203 lượt xem</span>
+              <div class="block">
+                <a href="#" class="thumbHistory">
+                  <img src="imgs/temp/thumbHistory.jpg" alt="History" width="340" height="225">
+                </a>
+                <h3>
+                  <a href="#">
+                    Playlist tập hợp 100 ca khúc nổi bật nhất US-UK do nhiều ca sĩ thể hiện
+                  </a>
+                </h3>
+                <p class="authorPost">
+                  Trần Văn Kiên - Hà Nội
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <!-- /endboxNews -->
-        <div class="boxConsult">
-          <div class="titleConsult">
-            <h3 class="globalTitle">
-              <a href="#">Góc chuyên gia</a>
-            </h3>
-          </div>
-          <p>
-            Với đội ngũ bác sĩ, dược sĩ nhiều năm kinh nghiệm và các chuyên gia hàng đầu của hãng dược phẩm Pleuran, chúng tôi luôn lắng nghe và sẵn sàng tư vấn với mong muốn mang tới sức khỏe toàn diện cho thế hệ mầm non Việt Nam.
-          </p>
-        </div>
-        <div class="boxQuestion clearFix">
-          <div class="areaQuestion">
-            <ul class="listQuestion" id="listQuestion">
-              <li><a href="#">Viêm phế quản ở trẻ 2 tuổi</a></li>
-              <li><a href="#">Dấu hiệu và cách chữa viêm họng cho trẻ sơ sinh</a></li>
-              <li><a href="#">Lưu ý cần biết khi đưa bé đi tiêm chủng</a></li>
-              <li><a href="#">Cách nào giúp trẻ ăn ngon?</a></li>
-              <li><a href="#">Dấu hiệu và cách chữa viêm họng cho trẻ sơ sinh</a></li>
-              <li><a href="#">Ép con ăn hết – mẹ mừng hay lo?</a></li>
-              <li><a href="#">Viêm phế quản ở trẻ 2 tuổi</a></li>
-            </ul>
-            <div class="areaAsk">
-              <a href="#" class="btnAsk">Đặt câu hỏi tại đây</a>
-            </div>
-          </div>
-          <div class="areaAvatar">
-            <img src="imgs/bg/avatar.png" alt="">
-          </div>
-        </div>
+        <ul class="listAdv clearFix">
+          <li>
+            <a href="phanphoi.html">
+              <img src="imgs/temp/contact.jpg" alt="">
+            </a>
+          </li>
+          <li>
+            <a href="lienhe.html">
+              <img src="imgs/temp/dis.jpg" alt="">
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class="contentRight">
+      <div class="layoutRight">
         <div class="boxVideo">
           <h3 class="globalTitle">
-            <a href="#">Góc Video</a>
+            Góc Video
           </h3>
-          <div class="content">
-            <iframe width="100%" height="250" src="https://www.youtube.com/embed/4QEmJ3sPHIg" frameborder="0" allowfullscreen></iframe>
-            <ul class="listVideo">
-              <li><a href="#">Giải đáp các thắc mắc của Mẹ trong quá  trình mang thai và chăm </a></li>
-              <li><a href="#">Giải đáp các thắc mắc của Mẹ trong quá  trình mang thai và chăm </a></li>
-              <li><a href="#">Giải đáp các thắc mắc của Mẹ trong quá  trình mang thai và chăm </a></li>
-            </ul>
+          <div class="listVideo">
+            <div class="videoScreen">
+              <iframe width="100%" height="200" src="https://www.youtube.com/embed/4QEmJ3sPHIg" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <div class="item">
+              <a href="#" class="thumb">
+                <img src="imgs/temp/thumbVideo.jpg" alt="">
+              </a>
+              <h3>
+                <a href="#">Phương pháp giúp quý ông luôn khỏe moạnh</a>
+              </h3>
+              <p class="view">333 lượt xem</p>
+            </div>
+            <div class="item">
+              <a href="#" class="thumb">
+                <img src="imgs/temp/thumbVideo.jpg" alt="">
+              </a>
+              <h3>
+                <a href="#">Phương pháp giúp quý ông luôn khỏe moạnh</a>
+              </h3>
+              <p class="view">333 lượt xem</p>
+            </div>
           </div>
         </div>
-        <!-- /endVideo -->
-        <div class="boxSale">
-          <h3 class="globalTitle">
-           <a href="#">Cộng đồng mẹ thông thái</a>
-          </h3>
-          <div class="Social">
-            <div class="fb-page" data-href="https://www.facebook.com/tuelinh.vn" data-width="100%" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/tuelinh.vn"><a href="https://www.facebook.com/tuelinh.vn">Tuệ Linh</a></blockquote></div></div>
-          </div>
-        </div>
-        <!-- /endSale -->
       </div>
     </div>
   </section>
-  <!-- /endSection -->
+  
   <footer class="footer">
     <div class="container">
       <div class="boxFooter clearFix">
@@ -467,30 +468,11 @@
         </div>
        </div>
     </div>
-    <div class="copyRight">
-      <div class="container">
-        <p class="copy">MỌI THÔNG TIN ĐỀU BẢN QUYỀN ĐỀU THUỘC VỀ CÔNG TY TNHH TUỆ LINH</p>
-        <p class="address">
-          Tầng 5, Tòa nhà 29 T1 - Hoàng Đạo Thúy - Trung Hòa - Cầu Giấy - Hà Nội- Điện thoại: (04) 62824344 - Fax: 04.62824263
-        </p>
-      </div>
-    </div>
   </footer>
-  <!-- /endboxNews -->
-  <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-      if (d.getElementById(id)) return;
-      js = d.createElement(s); js.id = id;
-      js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.4";
-      fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-  </script>
   <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-  <script src="js/wow.min.js"></script>
   <script type="text/javascript" src="js/jquery.matchHeight-min.js"></script>
+  <script type="text/javascript" src="js/jquery.responsiveTabs.min.js"></script>
   <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-  <script type="text/javascript" src="js/scrollReveal.js"></script>
   <script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>

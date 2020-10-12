@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="vi" class="no-js">
+<html lang="en" class="no-js">
 <head>
     <meta content='GCL' name='generator'/>
     <title>{{$meta_title}}</title>
@@ -39,102 +39,122 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
-    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-570f69bb385fe2f2"></script>
-    <link rel="stylesheet" href="/frontend/css/vitaminc.css" type="text/css"/>
-    <script src="/frontend/js/modernizr.js" type="text/javascript"></script>
+
+
+    <link rel="stylesheet" href="/frontend/css/ngocdon.css" type="text/css"/>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
-<div class="menuIcon pc">
-    <div class="listIcons">
-        <ul>
-            <li>
-                <a href="#" class="iSearch">Search</a>
-                <div class="box-find" id="box-find">
-                    <form action="{{ url('search') }}" method="GET">
-                        <input type="text" placeholder="Từ khóa tìm kiếm" name="q" class="txt"/>
-                        <input type="submit" value="" name="submit" class="btn-find"/>
-                    </form>
-                </div>
-            </li>
-            <li><a href="{{ \App\Helpers::configGet('youtube_link') }}" class="iYou">Youtube</a></li>
-            <li><a href="{{ \App\Helpers::configGet('skype_link') }}" class="iSkype">Skype</a></li>
-            <li><a href="{{ \App\Helpers::configGet('google_link') }}" class="iGoogle">Google</a></li>
-        </ul>
-    </div>
-</div>
-<div class="hotLine sp">
-    <img src="/frontend/imgs/hot.png" alt="Hot">
-</div>
 <header class="header">
     <div class="container">
-        <h1 class="clearFix">
-            <a href="#" class="logo" title="Logo">
-                <img src="{{ url(\App\Helpers::configGet('website_logo_pc'))  }}" alt="Vitamin C" width="225" height="125" class="pc">
-                <img src="{{ url(\App\Helpers::configGet('website_logo_sp')) }}" alt="Vitamin C" width="295" height="100" class="sp">
-            </a>
-        </h1>
-        <ul id="globalNav" class="pc">
-            <li>
-                <a class="{{(isset($page) && $page == 'index') ? 'active' : ''}}" href="{{url('/')}}" title="">TRANG CHỦ</a>
-            </li>
-
-            @if ($headerCategories = \App\Helpers::getMainCategories())
-                @foreach ($headerCategories as $headerCategory)
-                    <li>
-                        <a class="{{(isset($page) && ($page == $headerCategory->slug || in_array($page, $headerCategory->children->pluck('slug')->all()))) ? 'active' : ''}}" href="{{url($headerCategory->slug)}}">{{$headerCategory->name}}</a>
-                        @if ($headerCategory->children->count() > 0)
-                            <ul>
-                                @foreach ($headerCategory->children as $childCategory)
-                                    <li><a class="{{(isset($page) && $page == $childCategory->slug) ? 'active' : ''}}" href="{{url($childCategory->slug)}}">{{$childCategory->name}}</a></li>
-                                @endforeach
-                            </ul>
-                        @endif
-                    </li>
-                @endforeach
-            @endif
-
-            <li><a href="{{ route('frontend.video') }}">Videos</a></li>
-            <li><a href="{{ route('frontend.contact') }}">Liên hệ</a></li>
-        </ul>
+        <div class="panelTop">
+            <form action="{{ url('search') }}" method="GET">
+                <div class="boxSearch">
+                    <input type="text" name="q" placeholder="Nội dung tìm kiếm">
+                </div>
+            </form>
+            <ul class="navSocial pc">
+                <li>
+                    <a href="{{ \App\Helpers::configGet('facebook_link') }}" class="fb">
+                        Facebook
+                    </a>
+                </li>
+                <li>
+                    <a href="{{ \App\Helpers::configGet('youtube_link') }}" class="yu">
+                        Youtube
+                    </a>
+                </li>
+            </ul>
+        </div>
         <a href="#" title="Menu" class="sp btnMenu" id="btnMenu">Menu</a>
+    </div>
+    <div class="headerNav">
+        <div class="navGlobal">
+            <div class="container">
+                <ul id="navGlobal" class="navGlobal pc clearFix">
+                    <li>
+                        <a class="{{(isset($page) && $page == 'index') ? 'current' : ''}}" href="{{url('/')}}" title="">Trang chủ</a>
+                    </li>
+
+                    @if ($headerCategories = \App\Helpers::getMainCategories())
+                        @foreach ($headerCategories as $headerCategory)
+                            <li>
+                                <a class="{{(isset($page) && ($page == $headerCategory->slug || in_array($page, $headerCategory->children->pluck('slug')->all()))) ? 'current' : ''}}" href="{{url($headerCategory->slug)}}">{{$headerCategory->name}}</a>
+                                @if ($headerCategory->children->count() > 0)
+                                    <ul class="hasSub">
+                                        @foreach ($headerCategory->children as $childCategory)
+                                            <li><a class="{{(isset($page) && $page == $childCategory->slug) ? 'current' : ''}}" href="{{url($childCategory->slug)}}">{{$childCategory->name}}</a></li>
+                                        @endforeach
+                                    </ul>
+                                @endif
+                            </li>
+                        @endforeach
+                    @endif
+                    <li><a {{(isset($page) && $page == 'video') ? 'current' : ''}} href="{{ route('frontend.video') }}">Videos</a></li>
+                    <li><a {{(isset($page) && $page == 'lien-he') ? 'current' : ''}} href="{{ route('frontend.contact') }}">Liên hệ</a></li>
+                </ul>
+                <h1>
+                    <a href="#" class="logo" style="background: url({{ \App\Helpers::configGet('website_logo_pc') }}) no-repeat" title="logo">
+                        <img src="{{ url(\App\Helpers::configGet('website_logo_pc'))  }}" alt="Logo" width="211" height="67">
+                    </a>
+                </h1>
+            </div>
+        </div>
     </div>
 </header>
 <!-- /endHeader -->
-@if ($focusPosts = \App\Helpers::getFocusIndexPosts())
-    <section class="boxSlidePage bg">
-        <div class="container">
-            <h3 class="globalTitle noneAfter">
-                <a href="#">
-                    <span class="highLight">&nbsp;</span>
-                    <span class="bgLight">Tiêu điểm</span>
-                </a>
-            </h3>
-            <div class="listSlidePage clearFix">
-                <div class="owl-carousel" id="slidePage">
-                    @foreach ($focusPosts as $focusPost)
-                        <div class="item wow slideInLeft" data-wow-duration="0.8s" data-wow-delay="1s">
-                            <a href="{{ url($focusPost->slug.'.html') }}" title="">
-                                <img src="{{ \App\Helpers::getImageUrlBySize($focusPost->image, 274, 174) }}" width="274" height="174" alt=""/>
-                            </a>
-                            <h3>
-                                <a href="{{ url($focusPost->slug.'.html') }}">
-                                    {{ $focusPost->name }}
-                                </a>
-                            </h3>
-                            <p>
-                                {{ $focusPost->desc }}
-                            </p>
-                        </div>
-                    @endforeach
-                </div>
-            </div>
-        </div>
-    </section>
-@endif
 
+<section class="boxFeature">
+    <div class="container">
+        @foreach (\App\Helpers::getFocusIndexPosts() as $focusPost)
+        <article class="item borderLeft">
+            <a href="{{ url($focusPost->slug.'.html') }}" class="thumb" title="{{ $focusPost->name }}">
+                <img src="{{ \App\Helpers::getImageUrlBySize($focusPost->image, 285, 150) }}" alt="{{ $focusPost->name }}" width="285" height="150">
+            </a>
+        </article>
+        @endforeach
+    </div>
+</section>
+<section class="boxTabs">
+    <div class="container">
+        <div id="horizontalTab">
+
+            @php
+               $showCates = \App\Helpers::getMainCategoryHavePosts();
+            @endphp
+
+            <ul class="navTabs clearFix">
+                @foreach ($showCates as $index => $showCate)
+                <li>
+                    <a href="#tab0{{$index+1}}" title="Tab0{{$index+1}}">{{ $showCate->name }}</a>
+                </li>
+                @endforeach
+
+            </ul>
+            @foreach ($showCates as $index => $showCate)
+                <article class="tabContent clearFix" id="tab0{{ $index +1 }}">
+                @foreach (\App\Helpers::getCategoryPosts($showCate) as $catePost)
+                    <div class="item clearFix">
+                        <a href="{{ url($catePost->slug.'.html') }}" class="thumb">
+                            <img src="{{ \App\Helpers::getImageUrlBySize($catePost->image, 320, 225) }}" alt="{{ $catePost->name }}" width="320" height="225">
+                        </a>
+                        <h3>
+                            {{ \Illuminate\Support\Str::limit($catePost->name, 80) }}
+                        </h3>
+                        <p>
+                            {{ \Illuminate\Support\Str::limit($catePost->desc, 200) }}
+                        </p>
+                    </div>
+                @endforeach
+            </article>
+            @endforeach
+        </div>
+    </div>
+</section>
+<!-- /endboxTabs -->
 @yield('content')
 
-<!-- /endSection -->
 <footer class="footer">
     <div class="container">
         <div class="boxFooter clearFix">
@@ -148,47 +168,27 @@
             <div class="areaLink">
                 <ul class="listCategory clearFix">
                     <li>
-                        <a class="{{(isset($page) && $page == 'index') ? 'active' : ''}}" href="{{url('/')}}" title="">TRANG CHỦ</a>
+                        <a href="{{url('/')}}" title="">TRANG CHỦ</a>
                     </li>
 
                     @if ($headerCategories = \App\Helpers::getMainCategories())
                         @foreach ($headerCategories as $headerCategory)
                             <li>
-                                <a class="{{(isset($page) && ($page == $headerCategory->slug || in_array($page, $headerCategory->children->pluck('slug')->all()))) ? 'active' : ''}}" href="{{url($headerCategory->slug)}}">{{$headerCategory->name}}</a>
+                                <a href="{{url($headerCategory->slug)}}">{{$headerCategory->name}}</a>
                             </li>
                         @endforeach
                     @endif
-
                     <li><a href="{{ route('frontend.video') }}">Videos</a></li>
                     <li><a href="{{ route('frontend.contact') }}">Liên hệ</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div class="copyRight">
-        <div class="container">
-            <p class="copy">{{ \App\Helpers::configGet('company_copyright') }}</p>
-            <p class="address">
-                {{ \App\Helpers::configGet('company_contact') }}
-            </p>
-        </div>
-    </div>
 </footer>
-<!-- /endboxNews -->
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s); js.id = id;
-        js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.4";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
 <script type="text/javascript" src="/frontend/js/jquery-1.10.2.min.js"></script>
-<script src="/frontend/js/wow.min.js"></script>
 <script type="text/javascript" src="/frontend/js/jquery.matchHeight-min.js"></script>
+<script type="text/javascript" src="/frontend/js/jquery.responsiveTabs.min.js"></script>
 <script type="text/javascript" src="/frontend/js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="/frontend/js/scrollReveal.js"></script>
 <script type="text/javascript" src="/frontend/js/common.js"></script>
 @yield('after_scripts')
 </body>

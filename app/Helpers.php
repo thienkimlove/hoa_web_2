@@ -169,6 +169,15 @@ class Helpers
             'active'      => 1,
         ],
 
+        [
+            'key'         => 'facebook_link',
+            'name'        => 'Facebook Link',
+            'description' => 'For SEO',
+            'value'       => '#',
+            'field'       => '{"name":"value","label":"Value","type":"text"}', //text, textarea
+            'active'      => 1,
+        ],
+
 
     ];
 
@@ -228,7 +237,7 @@ class Helpers
         return Post::where('status', true)
             ->where('is_focus_index', true)
             ->latest('created_at')
-            ->limit(6)
+            ->limit(3)
             ->get();
     }
 
@@ -249,6 +258,33 @@ class Helpers
     public static function configGet($key)
     {
         return Setting::get($key);
+    }
+
+    public static function getMainCategoryHavePosts()
+    {
+        $categories = Category::whereNull('parent_id')->get();
+
+        $results = [];
+
+        foreach ($categories as $category) {
+            $posts = self::getCategoryPosts($category);
+
+            if ($posts->count() > 0) {
+                $results[] = $category;
+            }
+        }
+        return $results;
+    }
+
+    public static function getCategoryPosts($category, $limit=3)
+    {
+        $cateIds = ($category->children->count() > 0) ? $category->children->pluck('id')->all() : [$category->id];
+
+        return Post::publish()
+            ->whereIn('category_id', $cateIds)
+            ->latest('updated_at')
+            ->limit($limit)
+            ->get();
     }
 
 }

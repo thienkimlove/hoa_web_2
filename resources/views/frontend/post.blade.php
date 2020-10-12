@@ -1,41 +1,38 @@
 @extends('frontend.layout')
 
 @section('content')
-    <section class="section vis">
+    <section class="layoutHome">
         <div class="container">
-            <div class="contentLeft">
+            <div class="layoutLeft">
                 <ul class="breadCrumb clearFix">
-                    <li><a href="{{ url('/') }}">Trang chủ</a></li>
-                    <li class="active">{{ $post->category->name }}</li>
+                    <li class="active">
+                        <a href="{{ url('/') }}">Trang chủ</a>
+                    </li>
+                    <li><a href="{{ url($post->category->slug) }}">{{ $post->category->name }}</a></li>
+                    <li>{{ $post->name }}</li>
                 </ul>
-                <div class="boxDetails">
-                    <div class="headBox">
-                        <h3 class="titleBox">{{ $post->name }}</h3>
-                        <span class="datePost">
-                            Ngày đăng: {{ $post->updated_at->format('d/m/Y') }}
-                        </span>
-                        <span class="view">Lượt xem: {{ $post->views }}</span>
-                    </div>
+                <div class="boxDetail">
+                    <h2 class="titlePost">
+                        {{ $post->name }}
+                    </h2>
                      {!! $post->content !!}
-                    <!-- /endTab03 -->
                 </div>
+                <!-- //listButton -->
 
-                <div class="boxNews">
-                    <h3 class="globalTitle"><a href="#">Bài mới nhất</a></h3>
-                    <div class="listNews clearFix">
+                <!-- //boxOther -->
+                <div class="boxOther">
+                    <h3 class="titleOther">
+                        <a href="#">Bài liên quan</a>
+                    </h3>
+                    <ul class="listOther" id="listOrther">
                         @foreach($latestNews as $latestNew)
-                            <div class="item">
-                            <a href="{{ $latestNew->slug.'.html' }}" class="thumb">
-                                <img src="{{ \App\Helpers::getImageUrlBySize($latestNew->image, 130, 80) }}" alt="List news">
-                            </a>
-                            <p>
-                               <a href="{{ $latestNew->slug.'.html' }}">{{ $latestNew->name }}</a>
-                            </p>
-                            <span class="datePost">{{ $latestNew->updated_at->format('d/m/Y') }}</span>
-                            <span class="countView">{{ $latestNew->views }} lượt xem</span>
-                        </div>
+                            <li>
+                                <a href="{{ url($latestNew->slug.'.html') }}">
+                                    {{ $latestNew->name }}
+                                </a>
+                            </li>
                         @endforeach
-                    </div>
+                    </ul>
                 </div>
             </div>
             @include('frontend.right')

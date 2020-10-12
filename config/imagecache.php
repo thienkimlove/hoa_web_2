@@ -59,11 +59,29 @@ return [
         '120x120' => function($image) {
             return $image->fit(120, 120);
         },
+        '285x150' => function($image) {
+            return $image->fit(285, 150);
+        },
         '120x84' => function($image) {
             return $image->fit(120, 84);
         },
         '100x80' => function($image) {
             return $image->fit(100, 80);
+        },
+        '320x225' => function($image) {
+            return $image->fit(320, 225);
+        },
+        '105x62' => function($image) {
+            return $image->fit(105, 62);
+        },
+        '656x270' => function($image) {
+            return $image->fit(656, 270);
+        },
+        '275x200' => function($image) {
+            return $image->fit(275, 200);
+        },
+        '340x225' => function($image) {
+            return $image->fit(340, 225);
         },
         '130x80' => function($image) {
             return $image->fit(130, 80);

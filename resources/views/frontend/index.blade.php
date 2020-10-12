@@ -1,64 +1,32 @@
 @extends('frontend.layout')
 
 @section('content')
-
-    <section class="section mb0">
+    <section class="layoutHome">
         <div class="container">
-            <div class="contentLeft">
-                <!-- /endboxRecommended -->
-                <div class="boxNews clearFix">
-                    <h3 class="globalTitle">
-                        <a href="#">Bài viết mới nhất</a>
-                    </h3>
-                    @if ($latestPosts = \App\Helpers::getLatestPosts())
-                        @foreach ($latestPosts->chunk(3) as $latest3Posts)
-                            <div class="listNews clearFix">
-                                @foreach ($latest3Posts as $latest3Post)
-                                    <div class="item">
-                                        <a href="{{ url($latest3Post->slug.'.html') }}" class="thumb">
-                                            <img src="{{ \App\Helpers::getImageUrlBySize($latest3Post->image, 130, 80)  }}" alt="{{ $latest3Post->name }}">
-
+            <div class="layoutLeft">
+                <div class="boxHistory">
+                    <div class="globalTitle">
+                        Bài viết nổi bật
+                    </div>
+                    <div class="data owl-carousel" id="slideHistory">
+                        @foreach (\App\Helpers::getHighLightIndexPosts() as $highlightPost)
+                            <div class="item">
+                                <div class="block">
+                                    <a href="{{ url($highlightPost->slug.'.html') }}" class="thumbHistory">
+                                        <img src="{{ \App\Helpers::getImageUrlBySize($highlightPost->image, 340, 225) }}" alt="History" width="340" height="225">
+                                    </a>
+                                    <h3>
+                                        <a href="{{ url($highlightPost->slug.'.html') }}">
+                                            {{ \Illuminate\Support\Str::limit($highlightPost->name, 80) }}
                                         </a>
-                                        <p>
-                                            <a href="{{ url($latest3Post->slug.'.html') }}">
-                                                {{ $latest3Post->name }}
-                                            </a>
-                                        </p>
-                                        <span class="datePost">{{ $latest3Post->updated_at->format('d/m/Y') }}</span>
-                                        <span class="countView">{{ $latest3Post->views }} lượt xem</span>
-                                    </div>
-                                @endforeach
+                                    </h3>
+                                </div>
                             </div>
                         @endforeach
-                    @endif
-                </div>
-                <!-- /endboxNews -->
-                <div class="boxConsult">
-                    <div class="titleConsult">
-                        <h3 class="globalTitle">
-                            <a href="#">Bài viết nổi bật</a>
-                        </h3>
-                    </div>
-                </div>
-                <div class="boxQuestion clearFix">
-                    <div class="areaQuestion">
-                        @if ($highlightPosts = \App\Helpers::getHighLightIndexPosts())
-                            <ul class="listQuestion" id="listQuestion">
-                                @foreach ($highlightPosts as $highlightPost)
-                                    <li>
-                                        <a href="{{ url($highlightPost->slug.'.html') }}">
-                                            {{ $highlightPost->name }}
-                                        </a>
-                                    </li>
-                                @endforeach
-                            </ul>
-                        @endif
                     </div>
                 </div>
             </div>
             @include('frontend.right')
         </div>
     </section>
-@endsection
-@section('after_scripts')
 @endsection
