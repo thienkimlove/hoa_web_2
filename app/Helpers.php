@@ -21,7 +21,7 @@ class Helpers
             'key'         => 'meta_index_title',
             'name'        => 'Meta Index Title',
             'description' => 'For SEO',
-            'value'       => 'suckhoe248.com',
+            'value'       => 'suachua248.com',
             'field'       => '{"name":"value","label":"Value","type":"text"}', //text, textarea
             'active'      => 1,
         ],
@@ -29,7 +29,7 @@ class Helpers
             'key'         => 'meta_index_desc',
             'name'        => 'Meta Index Description',
             'description' => 'For SEO',
-            'value'       => 'suckhoe248.com',
+            'value'       => 'suachua248.com',
             'field'       => '{"name":"value","label":"Value","type":"textarea"}', //text, textarea
             'active'      => 1,
         ],
@@ -37,7 +37,7 @@ class Helpers
             'key'         => 'meta_index_keywords',
             'name'        => 'Meta Index Keywords',
             'description' => 'For SEO',
-            'value'       => 'suckhoe248.com',
+            'value'       => 'suachua248.com',
             'field'       => '{"name":"value","label":"Value","type":"text"}', //text, textarea
             'active'      => 1,
         ],
@@ -45,7 +45,7 @@ class Helpers
             'key'         => 'meta_contact_title',
             'name'        => 'Meta Contact Title',
             'description' => 'For SEO',
-            'value'       => 'suckhoe248.com',
+            'value'       => 'suachua248.com',
             'field'       => '{"name":"value","label":"Value","type":"text"}', //text, textarea
             'active'      => 1,
         ],
@@ -53,7 +53,7 @@ class Helpers
             'key'         => 'meta_contact_desc',
             'name'        => 'Meta Contact Description',
             'description' => 'For SEO',
-            'value'       => 'suckhoe248.com',
+            'value'       => 'suachua248.com',
             'field'       => '{"name":"value","label":"Value","type":"textarea"}', //text, textarea
             'active'      => 1,
         ],
@@ -61,7 +61,7 @@ class Helpers
             'key'         => 'meta_contact_keywords',
             'name'        => 'Meta Contact Keywords',
             'description' => 'For SEO',
-            'value'       => 'suckhoe248.com',
+            'value'       => 'suachua248.com',
             'field'       => '{"name":"value","label":"Value","type":"text"}', //text, textarea
             'active'      => 1,
         ],
@@ -70,7 +70,7 @@ class Helpers
             'key'         => 'meta_video_title',
             'name'        => 'Meta Video Title',
             'description' => 'For SEO',
-            'value'       => 'suckhoe248.com',
+            'value'       => 'suachua248.com',
             'field'       => '{"name":"value","label":"Value","type":"text"}', //text, textarea
             'active'      => 1,
         ],
@@ -78,7 +78,7 @@ class Helpers
             'key'         => 'meta_video_desc',
             'name'        => 'Meta Video Description',
             'description' => 'For SEO',
-            'value'       => 'suckhoe248.com',
+            'value'       => 'suachua248.com',
             'field'       => '{"name":"value","label":"Value","type":"textarea"}', //text, textarea
             'active'      => 1,
         ],
@@ -86,7 +86,7 @@ class Helpers
             'key'         => 'meta_video_keywords',
             'name'        => 'Meta Video Keywords',
             'description' => 'For SEO',
-            'value'       => 'suckhoe248.com',
+            'value'       => 'suachua248.com',
             'field'       => '{"name":"value","label":"Value","type":"text"}', //text, textarea
             'active'      => 1,
         ],
@@ -95,7 +95,7 @@ class Helpers
             'key'         => 'company_copyright',
             'name'        => 'Copy Right',
             'description' => 'For SEO',
-            'value'       => 'MỌI THÔNG TIN ĐỀU BẢN QUYỀN ĐỀU THUỘC VỀ suckhoe248.com',
+            'value'       => 'MỌI THÔNG TIN ĐỀU BẢN QUYỀN ĐỀU THUỘC VỀ suachua248.com',
             'field'       => '{"name":"value","label":"Value","type":"text"}', //text, textarea
             'active'      => 1,
         ],
@@ -112,7 +112,7 @@ class Helpers
         [
             'key'         => 'website_logo_pc',
             'name'        => 'Website Logo Pc',
-            'description' => 'For SEO',
+            'description' => 'For SEO (Size 270x110)',
             'value'       => 'uploads/logo.png',
             'field'       => '{"name":"value","label":"Value","type":"browse"}', //text, textarea
             'active'      => 1,
@@ -139,7 +139,7 @@ class Helpers
             'key'         => 'website_name',
             'name'        => 'Website Name',
             'description' => 'For SEO',
-            'value'       => 'Suckhoe248.com',
+            'value'       => 'suachua248.com',
             'field'       => '{"name":"value","label":"Value","type":"text"}', //text, textarea
             'active'      => 1,
         ],
@@ -176,14 +176,14 @@ class Helpers
             'value'       => '#',
             'field'       => '{"name":"value","label":"Value","type":"text"}', //text, textarea
             'active'      => 1,
-        ],
+        ]
 
 
     ];
 
-    public static function getMainCategories()
+    public static function getMainCategories($limit = 4)
     {
-        return Category::whereNull('parent_id')->get();
+        return Category::whereNull('parent_id')->limit($limit)->get();
     }
 
     public static function getContactStatuses()

@@ -95,7 +95,7 @@
                     <li><a {{(isset($page) && $page == 'lien-he') ? 'current' : ''}} href="{{ route('frontend.contact') }}">Liên hệ</a></li>
                 </ul>
                 <h1>
-                    <a href="#" class="logo" style="background: url({{ \App\Helpers::configGet('website_logo_pc') }}) no-repeat" title="logo">
+                    <a href="#" class="logo" style="background: url({{ \App\Helpers::configGet('website_logo_pc') }}) no-repeat;" title="logo">
                         <img src="{{ url(\App\Helpers::configGet('website_logo_pc'))  }}" alt="Logo" width="211" height="67">
                     </a>
                 </h1>
@@ -105,50 +105,10 @@
 </header>
 <!-- /endHeader -->
 
-<section class="boxFeature">
-    <div class="container">
-        @foreach (\App\Helpers::getFocusIndexPosts() as $focusPost)
-        <article class="item borderLeft">
-            <a href="{{ url($focusPost->slug.'.html') }}" class="thumb" title="{{ $focusPost->name }}">
-                <img src="{{ \App\Helpers::getImageUrlBySize($focusPost->image, 285, 150) }}" alt="{{ $focusPost->name }}" width="285" height="150">
-            </a>
-        </article>
-        @endforeach
-    </div>
-</section>
-<section class="boxTabs">
-    <div class="container">
-        <div id="horizontalTab">
-
-            @php
-               $showCates = \App\Helpers::getMainCategoryHavePosts();
-            @endphp
-
-            <ul class="navTabs clearFix">
-                @foreach ($showCates as $index => $showCate)
-                <li>
-                    <a href="#tab0{{$index+1}}" title="Tab0{{$index+1}}">{{ $showCate->name }}</a>
-                </li>
-                @endforeach
-
-            </ul>
-            @foreach ($showCates as $index => $showCate)
-                <article class="tabContent clearFix" id="tab0{{ $index +1 }}">
-                @foreach (\App\Helpers::getCategoryPosts($showCate) as $catePost)
-                    <div class="item clearFix">
-                        <a href="{{ url($catePost->slug.'.html') }}" class="thumb">
-                            <img src="{{ \App\Helpers::getImageUrlBySize($catePost->image, 320, 225) }}" alt="{{ $catePost->name }}" width="320" height="225">
-                        </a>
-                        <h3>
-                            {{ \Illuminate\Support\Str::limit($catePost->name, 80) }}
-                        </h3>
-                        <p>
-                            {{ \Illuminate\Support\Str::limit($catePost->desc, 200) }}
-                        </p>
-                    </div>
-                @endforeach
-            </article>
-            @endforeach
+<section class="boxBanner">
+    <div class="boxSlider">
+        <div class="owl-carousel" id="slideHomepage">
+            <div class="item"></div>
         </div>
     </div>
 </section>
