@@ -1,23 +1,5 @@
 (function($){
   /*mobile*/
-  var nav_global = $('#navGlobal');
-  var showMenuMobile = function () {
-    $('#btnMenu').click(function(e){
-      var w_device = $(window).width();
-      if(e.handled !== true){
-        if(w_device < 959 && $('#btnMenu').is(':visible')){
-          if(nav_global.is(':visible')){
-            nav_global.slideUp(500);
-          }else{
-            nav_global.delay(100).slideDown(500);
-          }
-        }
-        $(this).toggleClass('show');
-        e.handled = true;
-      }
-      e.preventDefault();
-    });
-  };
   /*tabContent*/
   var $tabs = $('#horizontalTab');
   $tabs.responsiveTabs({
@@ -169,11 +151,43 @@
         obj.removeAttr('style');
       }
     }
-  jQuery(document).ready(function() {
-    showMenuMobile();
+  $(document).ready(function() {
+      $('.btnMenu').click(function(e){
+          $(this).toggleClass('open');
+          $('body').toggleClass('fixed');
+          $('#main-nav').toggleClass('active');
+          e.preventDefault();
+      });
     slideHomepage();
     slideHistory();
     slideProduct();
 	tabContent();
   });
 })(jQuery);
+function notify(message) {
+    $('body').append("<div class='popup px'><div class='popup-content'><a href='javascript:void(0)' class='close-popup' title='Đóng lại'>X</a><div class='message'></div></div></div>");
+    $(".popup").fadeIn();
+    $(".message").html(message);
+    $('.close-popup').click(function () {
+        $(".popup").fadeOut();
+    });
+}
+function login() {
+    $(".popup-login").fadeIn();
+    $(".close-popup").click(function () {
+        $(".popup-login").fadeOut();
+    });
+    $(".popup-login .btn-create").click(function () {
+        $(".popup-login").fadeOut();
+        $(".popup-regis").fadeIn();
+        $(".popup-regis .close-popup").click(function () {
+            $(".popup-regis").fadeOut();
+        });
+    });
+}
+function register() {
+    $(".popup-regis").fadeIn();
+    $(".close-popup").click(function () {
+        $(".popup-regis").fadeOut();
+    });
+}

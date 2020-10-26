@@ -15,52 +15,51 @@
   <script src="js/modernizr.js" type="text/javascript"></script>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="panelTop">
-        <form action="search" method="post">
-          <div class="boxSearch">
-            <input type="text" name="yourName" placeholder="Nội dung tìm kiếm">
-          </div>
-        </form>
-        <ul class="navSocial pc">
-          <li>
-            <a href="#" class="fb">Facebook</a>
-          </li>
-          <li><a href="#" class="yu">Youtube</a></li>
+<header class="pr">
+  <div class="fixCen head-info">
+    <h1 class="rs leftSide"><a href="index.html" class="logo" title="Dưỡng Ngọc Đơn" target="_blank">
+      <img src="images/logo.png" alt="Dưỡng Ngọc Đơn" class="imgFull">
+    </a></h1>
+    <span class="slogan center">
+                      Chuyên trang cộng đồng <br>
+                      <strong>Dành cho người bệnh xơ gan</strong>
+                  </span>
+    <div class="rightSide">
+      <div class="btns">
+        <a href="javascript:void(0)" class="btn-login" title="Đăng nhập" onclick="login()">Đăng nhập</a>
+        <a href="javascript:void(0)" class="btn-regis" title="Đăng ký" onclick="register()">Đăng ký</a>
+      </div>
+      <a href="dangbaiviet.html" class="btn-postArticle" title="Đăng bài viết">
+        Đăng bài viết
+      </a>
+      <form action="" class="search-on-top">
+        <input type="text" placeholder="Tìm kiếm ...">
+      </form>
+    </div>
+  </div>
+  <nav id="main-nav" class="mainMenu">
+    <div class="bgTop">
+      <a href="javascript:void(0)" class="btnMenu"></a>
+    </div>
+    <ul class="fixCen pr rs">
+      <li><a href="index.html" class="current">Trang chủ</a></li>
+      <li>
+        <a href="biquyetlamdep.html">Bí quyết làm đẹp</a>
+        <ul class="submenu">
+          <li><a href="thucdongiamcan.html">Thực đơn giảm cân</a></li>
+          <li><a href="tapluyengiamcan.html">Tập luyện giảm cân</a></li>
+          <li><a href="tuvangiamcan.html">Tư vấn giảm cân</a></li>
         </ul>
-      </div>
-      <a href="#" title="Menu" class="sp btnMenu" id="btnMenu">Menu</a>
-    </div>
-    <div class="headerNav">
-      <div class="navGlobal">
-        <div class="container">
-          <ul id="navGlobal" class="navGlobal pc clearFix">
-            <li><a href="index.html" class="current">Trang chủ</a></li>
-            <li>
-              <a href="biquyetlamdep.html">Bí quyết làm đẹp</a>
-              <ul class="hasSub">
-                <li><a href="thucdongiamcan.html">Thực đơn giảm cân</a></li>
-                <li><a href="tapluyengiamcan.html">Tập luyện giảm cân</a></li>
-                <li><a href="tuvangiamcan.html">Tư vấn giảm cân</a></li>
-              </ul>
-            </li>
-            <li><a href="sanpham.html">Sản phẩm</a></li>
-            <li><a href="chiase.html">Chia sẻ</a></li>
-            <li><a href="sukien.html">Sự kiện</a></li>
-            <li><a href="video.html">Video</a></li>
-            <li><a href="diemban.html">Điểm bán</a></li>
-            <li><a href="lienhe.html">Liên hệ</a></li>
-          </ul>
-          <h1>
-            <a href="#" class="logo" title="logo">
-              <img src="imgs/logo.png" alt="Logo" width="211" height="67">
-            </a>
-          </h1>
-        </div>
-      </div>
-    </div>
-  </header>
+      </li>
+      <li><a href="sanpham.html">Sản phẩm</a></li>
+      <li><a href="chiase.html">Chia sẻ</a></li>
+      <li><a href="sukien.html">Sự kiện</a></li>
+      <li><a href="video.html">Video</a></li>
+      <li><a href="diemban.html">Điểm bán</a></li>
+      <li><a href="lienhe.html">Liên hệ</a></li>
+    </ul>
+  </nav>
+</header>
   <!-- /endHeader -->
   <section class="boxBanner">
     <div class="boxSlider">
@@ -266,6 +265,95 @@
        </div>
     </div>
   </footer>
+<div class="popup popup-regis px">
+  <div class="popup-content pa">
+    <a href="javascript:void(0)" class="close-popup pa" title="Đóng lại">X</a>
+    <div class="content">
+      <div class="title">
+        <strong>Tạo tài khoản</strong>
+        Bạn hãy tạo tài khoản mà bạn muốn
+      </div>
+      <form action="">
+        <div class="rows">
+          <label>Tên đăng nhập <orange>*</orange></label>
+          <input type="text" placeholder="Tên đăng nhập">
+        </div>
+        <div class="rows">
+          <label>Email <orange>*</orange></label>
+          <input type="text" placeholder="Email">
+        </div>
+        <div class="rows">
+          <label>Số điện thoại <orange>*</orange></label>
+          <input type="text" placeholder="Số điện thoại">
+        </div>
+        <div class="rows">
+          <label>Mật khẩu <orange>*</orange></label>
+          <input type="text" placeholder="Mật khẩu">
+          <div class="checkboxInput">
+            <input type="checkbox" checked /> Hiển thị mật khẩu
+          </div>
+        </div>
+        <div class="rows">
+          <label>Họ tên <orange>*</orange></label>
+          <input type="text" placeholder="Họ và tên">
+        </div>
+        <div class="rows">
+          <label>Tỉnh/ Thành phố sinh sống <orange>*</orange></label>
+          <input type="text" placeholder="Tỉnh/ Thành phố">
+        </div>
+        <div class="rows">
+          <label>Ngày/tháng/năm sinh <orange>*</orange></label>
+          <input type="text" placeholder="DD/MM/YYYY">
+        </div>
+        <div class="rows">
+          <label>CMND/ Căn cước công dân/ Hộ chiếu <orange>*</orange></label>
+          <input type="text" placeholder="CMDN/ Căn cước công dân/ Hộ chiếu">
+        </div>
+        <div class="rows theLast">
+          <label>Địa chỉ cụ thể <orange>*</orange></label>
+          <textarea name="" id="" cols="30" rows="4" placeholder="Địa chỉ cụ thể"></textarea>
+        </div>
+        <div class="note">
+          Khi bạn nhấn nút "Tạo tài khoản" dưới đây thì có nghĩa là bạn đã đồng ý với các <br>
+          <a href="javascript:void(0)" title="Điều khoản quy định" target="_blank">Điều khoản quy định</a>
+          của sinhlucnam.vn
+        </div>
+        <a href="javascript:void(0)" class="btn-create" title="Tạo tài khoản">Tạo tài khoản</a>
+        <div class="txt">Vui lòng xác nhận qua email</div>
+        <div class="errors">Vui lòng nhập đầy đủ các thông tin trên</div>
+      </form>
+    </div>
+  </div>
+</div>
+<div class="popup popup-login px">
+  <div class="popup-content pa">
+    <a href="javascript:void(0)" class="close-popup pa" title="Đóng lại">X</a>
+    <div class="content">
+      <div class="title">
+        <strong>Đăng nhập</strong>
+        Chào bạn ! Hãy đăng nhập để gửi bài viết
+      </div>
+      <form action="">
+        <div class="rows">
+          <label>Tên đăng nhập</label>
+          <input type="text" placeholder="Tên đăng nhập">
+        </div>
+        <div class="rows">
+          <label>Mật khẩu</label>
+          <input type="text" placeholder="Mật khẩu">
+          <div class="checkboxInput">
+            <input type="checkbox" checked /> Ghi nhớ
+          </div>
+        </div>
+        <a href="javascript:void(0)" class="btn-login" title="Tạo tài khoản">Đăng nhập</a>
+        <div class="rows">
+          <a href="javascript:void(0)" class="forgot-pass" title="Quên mật khẩu">Quên mật khẩu</a>
+        </div>
+        <div class="errors">Vui lòng nhập đầy đủ các thông tin trên</div>
+      </form>
+    </div>
+  </div>
+</div>
   <!-- /endboxNews -->
   <div id="fb-root"></div>
   <script>(function(d, s, id) {

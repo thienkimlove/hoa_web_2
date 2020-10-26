@@ -28,7 +28,7 @@
                         </a>
                         <h3>
                             <a href="{{ url('video/'.$video->slug) }}" title="{{ $video->name }}">
-                                {{ $video->name }}
+                                {{ \Illuminate\Support\Str::limit($video->name, 80) }}
                             </a>
                         </h3>
                     </article>

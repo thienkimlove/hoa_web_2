@@ -1,0 +1,771 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="681b7a21-dfd1-4803-8878-d1d0bca70530" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/public/frontend/css/ngocdon.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend/images/btn-close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend/images/btn-menu.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend/images/i_search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend/images/i_write.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend/js/common.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/biquyetlamdep.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/chiase.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/chiase_chitiet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/css/_animate.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/css/_reset.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/css/_responsive.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/css/alid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/css/ngocdon.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/css/ngocdon.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/diemban.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/fonts/open-sans.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/fonts/open-sans.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/fonts/open-sans.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/hoidap.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/hoidap_chitiet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/images/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/bg/bgSection.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/bg/iCalendar.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/bg/i_google.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/bg/i_search.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/bg/i_skype.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/bg/i_tube.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/bg/icall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/bg/ilocal01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/bg/ilocation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/bg/leftItem.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/bg/leftSpan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/bg/line.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/bg/lineh3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/bg/next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/bg/noisy.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/bg/pre.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/bg/rightItem.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/bg/rightSpan.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/bg/sprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/bg/top_contact.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/temp/adv01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/temp/bg01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/temp/contact.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/temp/dis.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/temp/f1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/temp/f2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/temp/f3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/temp/product01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/temp/promo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/temp/question.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/temp/thumb01.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/temp/thumb02.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/temp/thumbHistory.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/temp/thumbListTab.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/temp/thumbNews.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/temp/thumbVideo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/imgs/temp/video-303x130-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/js/fixedsidebar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/js/html5.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/js/jquery-1.10.2.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/js/jquery.matchHeight-min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/js/jquery.responsiveTabs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/js/modernizr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/js/owl.carousel.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/lienhe.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/phanphoi_chitiet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/sanpham.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/sukien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/sukien_chitiet.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/tapluyengiamcan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/thucdongiamcan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/tuvangiamcan.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/frontend_v0/video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/AddSettings.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/AddSettings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/PostCrudController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/PostCrudController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/FrontendController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/FrontendController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/biquyetlamdep.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/biquyetlamdep.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/chiase.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/chiase.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/chiase_chitiet.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/chiase_chitiet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/css/_reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/css/_reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/css/_responsive.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/css/_responsive.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/css/ngocdon.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/css/ngocdon.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/css/ngocdon.scss" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/css/ngocdon.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/diemban.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/diemban.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/hoidap.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/hoidap.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/hoidap_chitiet.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/hoidap_chitiet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/lienhe.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/lienhe.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/phanphoi_chitiet.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/phanphoi_chitiet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/sanpham.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/sanpham.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/sukien.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/sukien.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/sukien_chitiet.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/sukien_chitiet.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/tapluyengiamcan.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/tapluyengiamcan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/thucdongiamcan.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/thucdongiamcan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/tuvangiamcan.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/tuvangiamcan.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/frontend/video.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/frontend/video.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/layout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/layout.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/frontend/video.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/frontend/video.blade.php" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="450">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/frontend/layout.blade.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="57" selection-start-line="57" selection-end-line="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/frontend/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="61" column="9" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="61" selection-end-column="9" />
+              <folding>
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&quot;imgs/</find>
+      <find>285</find>
+      <find>$category-&gt;children</find>
+      <find>suckhoe248.com</find>
+      <find>logo</find>
+      <find>search</find>
+      <find>current</find>
+      <find>action=&quot;search&quot;</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>&quot;/frontend/imgs/</replace>
+      <replace>suachua248.com</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/public</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/resources/views/frontend/right.blade.php" />
+        <option value="$PROJECT_DIR$/config/imagecache.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend/category.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend/post.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend/search.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend/tag.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/frontend/index.blade.php" />
+        <option value="$PROJECT_DIR$/app/Helpers.php" />
+        <option value="$PROJECT_DIR$/app/Console/Commands/AddSettings.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/FrontendController.php" />
+        <option value="$PROJECT_DIR$/public/frontend/index.html" />
+        <option value="$PROJECT_DIR$/resources/views/frontend/video.blade.php" />
+        <option value="$PROJECT_DIR$/public/frontend/css/ngocdon.scss" />
+        <option value="$PROJECT_DIR$/public/frontend/css/ngocdon.css" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Admin/PostCrudController.php" />
+        <option value="&lt;60f39be0-8a57-402c-89a0-b4e6cf504456&gt;/etc/nginx/sites-enabled/karofi.viettiepuocmo.vn" />
+        <option value="&lt;60f39be0-8a57-402c-89a0-b4e6cf504456&gt;/etc/nginx/sites-enabled/karofihanoi.viettiepuocmo.vn" />
+        <option value="&lt;60f39be0-8a57-402c-89a0-b4e6cf504456&gt;/etc/nginx/sites-enabled/karofivietnam.viettiepuocmo.vn" />
+        <option value="&lt;60f39be0-8a57-402c-89a0-b4e6cf504456&gt;/etc/nginx/sites-enabled/khuyenmai.viettiepuocmo.vn" />
+        <option value="&lt;60f39be0-8a57-402c-89a0-b4e6cf504456&gt;/etc/nginx/sites-enabled/maylocnuoc.viettiepuocmo.vn" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/resources/views/frontend/layout.blade.php" />
+      </list>
+    </option>
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
+      <path value="$PROJECT_DIR$/vendor/voku/portable-ascii" />
+      <path value="$PROJECT_DIR$/vendor/swiftmailer/swiftmailer" />
+      <path value="$PROJECT_DIR$/vendor/opis/closure" />
+      <path value="$PROJECT_DIR$/vendor/webmozart/assert" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-invoker" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/lexer" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-code-coverage" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/deep-copy" />
+      <path value="$PROJECT_DIR$/vendor/hamcrest/hamcrest-php" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/cache" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-timer" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/instantiator" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-file-iterator" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/event-manager" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/php-text-template" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/inflector" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition-contracts" />
+      <path value="$PROJECT_DIR$/vendor/facade/flare-client-php" />
+      <path value="$PROJECT_DIR$/vendor/facade/ignition" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+      <path value="$PROJECT_DIR$/vendor/psr/container" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/psr/cache" />
+      <path value="$PROJECT_DIR$/vendor/psr/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/psr/log" />
+      <path value="$PROJECT_DIR$/vendor/psr/simple-cache" />
+      <path value="$PROJECT_DIR$/vendor/watson/sitemap" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/doctrine/dbal" />
+      <path value="$PROJECT_DIR$/vendor/fruitcake/laravel-cors" />
+      <path value="$PROJECT_DIR$/vendor/symfony/var-dumper" />
+      <path value="$PROJECT_DIR$/vendor/fzaninotto/faker" />
+      <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-foundation" />
+      <path value="$PROJECT_DIR$/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php72" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/guzzle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php73" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/promises" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-kernel" />
+      <path value="$PROJECT_DIR$/vendor/symfony/finder" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php70" />
+      <path value="$PROJECT_DIR$/vendor/symfony/translation" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-mbstring" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher" />
+      <path value="$PROJECT_DIR$/vendor/phpunit/phpunit" />
+      <path value="$PROJECT_DIR$/vendor/symfony/css-selector" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/nikic/php-parser" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/filp/whoops" />
+      <path value="$PROJECT_DIR$/vendor/symfony/event-dispatcher-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-grapheme" />
+      <path value="$PROJECT_DIR$/vendor/league/commonmark" />
+      <path value="$PROJECT_DIR$/vendor/symfony/console" />
+      <path value="$PROJECT_DIR$/vendor/symfony/process" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/manifest" />
+      <path value="$PROJECT_DIR$/vendor/symfony/string" />
+      <path value="$PROJECT_DIR$/vendor/phar-io/version" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/mime" />
+      <path value="$PROJECT_DIR$/vendor/laracasts/generators" />
+      <path value="$PROJECT_DIR$/vendor/psy/psysh" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-idn" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/nesbot/carbon" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/dragonmantank/cron-expression" />
+      <path value="$PROJECT_DIR$/vendor/symfony/routing" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/scrivo/highlight.php" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/global-state" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/complexity" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
+      <path value="$PROJECT_DIR$/vendor/studio-42/elfinder" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-docblock" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/type-resolver" />
+      <path value="$PROJECT_DIR$/vendor/phpdocumentor/reflection-common" />
+      <path value="$PROJECT_DIR$/vendor/phpspec/prophecy" />
+      <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/comparator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/environment" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/exporter" />
+      <path value="$PROJECT_DIR$/vendor/intervention/imagecache" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/resource-operations" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/recursion-context" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-enumerator" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/object-reflector" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/cli-parser" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/diff" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/lines-of-code" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/type" />
+      <path value="$PROJECT_DIR$/vendor/sebastian/version" />
+      <path value="$PROJECT_DIR$/vendor/brick/math" />
+      <path value="$PROJECT_DIR$/vendor/ocramius/package-versions" />
+      <path value="$PROJECT_DIR$/vendor/theseer/tokenizer" />
+      <path value="$PROJECT_DIR$/vendor/spatie/laravel-permission" />
+      <path value="$PROJECT_DIR$/vendor/asm89/stack-cors" />
+      <path value="$PROJECT_DIR$/vendor/laravel/tinker" />
+      <path value="$PROJECT_DIR$/vendor/laravel/framework" />
+      <path value="$PROJECT_DIR$/vendor/cviebrock/eloquent-sluggable" />
+      <path value="$PROJECT_DIR$/vendor/graham-campbell/result-type" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem-cached-adapter" />
+      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
+      <path value="$PROJECT_DIR$/vendor/creativeorange/gravatar" />
+      <path value="$PROJECT_DIR$/vendor/cocur/slugify" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/collection" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/laravel-elfinder" />
+      <path value="$PROJECT_DIR$/vendor/ramsey/uuid" />
+      <path value="$PROJECT_DIR$/vendor/barryvdh/elfinder-flysystem-driver" />
+      <path value="$PROJECT_DIR$/vendor/prologue/alerts" />
+      <path value="$PROJECT_DIR$/vendor/league/flysystem" />
+      <path value="$PROJECT_DIR$/vendor/backpack/crud" />
+      <path value="$PROJECT_DIR$/vendor/backpack/permissionmanager" />
+      <path value="$PROJECT_DIR$/vendor/backpack/settings" />
+      <path value="$PROJECT_DIR$/vendor/backpack/generators" />
+      <path value="$PROJECT_DIR$/vendor/nunomaduro/collision" />
+      <path value="$PROJECT_DIR$/vendor/backpack/filemanager" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="947" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="hoa_web_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hoa_web_2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hoa_web_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hoa_web_2" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hoa_web_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hoa_web_2" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hoa_web_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hoa_web_2" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hoa_web_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hoa_web_2" type="462c0819:PsiDirectoryNode" />
+              <item name="public" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hoa_web_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hoa_web_2" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hoa_web_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hoa_web_2" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="hoa_web_2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="hoa_web_2" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="frontend" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/resources/views/frontend" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="681b7a21-dfd1-4803-8878-d1d0bca70530" name="Default Changelist" comment="" />
+      <created>1602316675846</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1602316675846</updated>
+      <workItem from="1602316677232" duration="7579000" />
+      <workItem from="1602467664247" duration="5228000" />
+      <workItem from="1602559026913" duration="1365000" />
+      <workItem from="1602736063561" duration="268000" />
+      <workItem from="1603336378435" duration="2576000" />
+      <workItem from="1603678657723" duration="701000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="17717000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1680" height="947" extended-state="0" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26823238" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="File Transfer" order="9" visible="true" weight="0.32925338" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32925338" />
+      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Remote Host" order="3" weight="0.32941905" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/public/frontend_v0/js/html5.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend_store/right.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="37" lean-forward="true" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/right.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="20" column="39" selection-start-line="20" selection-start-column="39" selection-end-line="20" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend_store/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="145" column="21" lean-forward="true" selection-start-line="141" selection-start-column="16" selection-end-line="145" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/contact.blade.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend_v0/biquyetlamdep.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1585" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend_v0/chiase.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="353" column="12" lean-forward="true" selection-start-line="80" selection-start-column="2" selection-end-line="353" selection-end-column="12" />
+          <folding>
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/pagination.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="14" column="6" lean-forward="true" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend_store/category.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="280">
+          <caret line="31" column="54" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/category.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1430">
+          <caret line="62" column="62" lean-forward="true" selection-start-line="62" selection-start-column="62" selection-end-line="62" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend_v0/chiase_chitiet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="134">
+          <caret line="222" column="12" lean-forward="true" selection-start-line="75" selection-start-column="2" selection-end-line="222" selection-end-column="12" />
+          <folding>
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend_v0/sukien.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2179" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend_v0/sukien_chitiet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="237" column="12" lean-forward="true" selection-start-line="75" selection-start-column="2" selection-end-line="237" selection-end-column="12" />
+          <folding>
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend_v0/hoidap_chitiet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1849" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend_store/post.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="25" column="59" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/post.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="509">
+          <caret line="35" column="22" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend_store/search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="59" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="59" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/search.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend_store/tag.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="63" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/tag.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-942">
+          <caret line="13" column="36" lean-forward="true" selection-start-line="13" selection-start-column="36" selection-end-line="13" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend_v0/video.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="281" column="12" lean-forward="true" selection-start-line="80" selection-start-column="2" selection-end-line="281" selection-end-column="12" />
+          <folding>
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend_v0/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="34" selection-start-line="24" selection-start-column="34" selection-end-line="24" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/imagecache.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1848">
+          <caret line="84" column="10" selection-start-line="84" selection-start-column="10" selection-end-line="84" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend_store/video.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="24" column="91" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/video.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="30" column="81" selection-start-line="30" selection-start-column="81" selection-end-line="30" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Console/Commands/AddSettings.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="990">
+          <caret line="48" column="9" selection-start-line="42" selection-start-column="8" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend_v0/css/ngocdon.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="72" column="16" selection-start-line="72" selection-start-column="16" selection-end-line="72" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend_v0/css/ngocdon.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6754">
+          <caret line="307" column="22" selection-start-line="307" selection-start-column="22" selection-end-line="307" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/FrontendController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4554">
+          <caret line="214" column="47" selection-start-line="214" selection-start-column="47" selection-end-line="214" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/index.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1166">
+          <caret line="49" column="14" selection-start-line="49" selection-start-column="14" selection-end-line="49" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend_v0/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3806">
+          <caret line="447" column="1" selection-start-line="447" selection-start-column="1" selection-end-line="447" selection-end-column="1" />
+          <folding>
+            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend_v0/phanphoi_chitiet.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1650">
+          <caret line="74" column="12" selection-start-line="59" selection-start-column="1" selection-end-line="74" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Admin/PostCrudController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="265">
+          <caret line="129" column="55" selection-start-line="129" selection-start-column="55" selection-end-line="129" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Helpers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="286" selection-start-line="286" selection-end-line="286" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend/js/html5.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.editorconfig">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/frontend/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="61" column="9" lean-forward="true" selection-start-line="17" selection-start-column="2" selection-end-line="61" selection-end-column="9" />
+          <folding>
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#section#2;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/frontend/layout.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

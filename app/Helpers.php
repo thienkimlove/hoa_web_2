@@ -176,14 +176,30 @@ class Helpers
             'value'       => '#',
             'field'       => '{"name":"value","label":"Value","type":"text"}', //text, textarea
             'active'      => 1,
-        ]
+        ],
+        [
+            'key'         => 'analytics',
+            'name'        => 'Analytics Code',
+            'description' => 'For SEO',
+            'value'       => '',
+            'field'       => '{"name":"value","label":"Value","type":"textarea"}', //text, textarea
+            'active'      => 1,
+        ],
+        [
+            'key'         => 'webmaster',
+            'name'        => 'Webmaster Code',
+            'description' => 'For SEO',
+            'value'       => '',
+            'field'       => '{"name":"value","label":"Value","type":"textarea"}', //text, textarea
+            'active'      => 1,
+        ],
 
 
     ];
 
-    public static function getMainCategories($limit = 4)
+    public static function getMainCategories()
     {
-        return Category::whereNull('parent_id')->limit($limit)->get();
+        return Category::whereNull('parent_id')->get();
     }
 
     public static function getContactStatuses()

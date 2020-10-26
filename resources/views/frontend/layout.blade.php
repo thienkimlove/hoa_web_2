@@ -41,77 +41,57 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
 
 
-    <link rel="stylesheet" href="/frontend/css/ngocdon.css" type="text/css"/>
+    <link rel="stylesheet" href="/frontend/css/ngocdon.css?v1=1111" type="text/css"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    {!! \App\Helpers::configGet('webmaster') !!}
 
 </head>
 <body>
-<header class="header">
-    <div class="container">
-        <div class="panelTop">
-            <form action="{{ url('search') }}" method="GET">
-                <div class="boxSearch">
-                    <input type="text" name="q" placeholder="Nội dung tìm kiếm">
-                </div>
+{!! \App\Helpers::configGet('analytics') !!}
+
+
+<header class="pr">
+    <div class="fixCen head-info">
+        <h1 class="rs leftSide"><a href="{{ url('/') }}" class="logo" title="{{ \App\Helpers::configGet('website_name') }}" target="_blank">
+                <img src="{{ \App\Helpers::configGet('website_logo_pc') }}" alt="{{ \App\Helpers::configGet('website_name') }}" class="imgFull">
+            </a></h1>
+
+        <div class="rightSide">
+            <form action="{{ url('search') }}" method="GET" class="search-on-top">
+                <input type="text" name="q" placeholder="Tìm kiếm ...">
             </form>
-            <ul class="navSocial pc">
-                <li>
-                    <a href="{{ \App\Helpers::configGet('facebook_link') }}" class="fb">
-                        Facebook
-                    </a>
-                </li>
-                <li>
-                    <a href="{{ \App\Helpers::configGet('youtube_link') }}" class="yu">
-                        Youtube
-                    </a>
-                </li>
-            </ul>
         </div>
-        <a href="#" title="Menu" class="sp btnMenu" id="btnMenu">Menu</a>
     </div>
-    <div class="headerNav">
-        <div class="navGlobal">
-            <div class="container">
-                <ul id="navGlobal" class="navGlobal pc clearFix">
+    <nav id="main-nav" class="mainMenu">
+        <div class="bgTop">
+            <a href="javascript:void(0)" class="btnMenu"></a>
+        </div>
+        <ul class="fixCen pr rs">
+            <li>
+                <a class="{{(isset($page) && $page == 'index') ? 'current' : ''}}" href="{{url('/')}}" title="">Trang chủ</a>
+            </li>
+
+            @if ($headerCategories = \App\Helpers::getMainCategories())
+                @foreach ($headerCategories as $headerCategory)
                     <li>
-                        <a class="{{(isset($page) && $page == 'index') ? 'current' : ''}}" href="{{url('/')}}" title="">Trang chủ</a>
+                        <a class="{{(isset($page) && ($page == $headerCategory->slug || in_array($page, $headerCategory->children->pluck('slug')->all()))) ? 'current' : ''}}" href="{{url($headerCategory->slug)}}">{{$headerCategory->name}}</a>
+                        @if ($headerCategory->children->count() > 0)
+                            <ul class="hasSub">
+                                @foreach ($headerCategory->children as $childCategory)
+                                    <li><a class="{{(isset($page) && $page == $childCategory->slug) ? 'current' : ''}}" href="{{url($childCategory->slug)}}">{{$childCategory->name}}</a></li>
+                                @endforeach
+                            </ul>
+                        @endif
                     </li>
-
-                    @if ($headerCategories = \App\Helpers::getMainCategories())
-                        @foreach ($headerCategories as $headerCategory)
-                            <li>
-                                <a class="{{(isset($page) && ($page == $headerCategory->slug || in_array($page, $headerCategory->children->pluck('slug')->all()))) ? 'current' : ''}}" href="{{url($headerCategory->slug)}}">{{$headerCategory->name}}</a>
-                                @if ($headerCategory->children->count() > 0)
-                                    <ul class="hasSub">
-                                        @foreach ($headerCategory->children as $childCategory)
-                                            <li><a class="{{(isset($page) && $page == $childCategory->slug) ? 'current' : ''}}" href="{{url($childCategory->slug)}}">{{$childCategory->name}}</a></li>
-                                        @endforeach
-                                    </ul>
-                                @endif
-                            </li>
-                        @endforeach
-                    @endif
-                    <li><a {{(isset($page) && $page == 'video') ? 'current' : ''}} href="{{ route('frontend.video') }}">Videos</a></li>
-                    <li><a {{(isset($page) && $page == 'lien-he') ? 'current' : ''}} href="{{ route('frontend.contact') }}">Liên hệ</a></li>
-                </ul>
-                <h1>
-                    <a href="#" class="logo" style="background: url({{ \App\Helpers::configGet('website_logo_pc') }}) no-repeat;" title="logo">
-                        <img src="{{ url(\App\Helpers::configGet('website_logo_pc'))  }}" alt="Logo" width="211" height="67">
-                    </a>
-                </h1>
-            </div>
-        </div>
-    </div>
+                @endforeach
+            @endif
+            <li><a class="{{(isset($page) && $page == 'video') ? 'current' : ''}}" href="{{ route('frontend.video') }}">Videos</a></li>
+            <li><a class="{{(isset($page) && $page == 'lien-he') ? 'current' : ''}}" href="{{ route('frontend.contact') }}">Liên hệ</a></li>
+        </ul>
+    </nav>
 </header>
-<!-- /endHeader -->
 
-<section class="boxBanner">
-    <div class="boxSlider">
-        <div class="owl-carousel" id="slideHomepage">
-            <div class="item"></div>
-        </div>
-    </div>
-</section>
+
 <!-- /endboxTabs -->
 @yield('content')
 
@@ -151,5 +131,6 @@
 <script type="text/javascript" src="/frontend/js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="/frontend/js/common.js"></script>
 @yield('after_scripts')
+
 </body>
 </html>
