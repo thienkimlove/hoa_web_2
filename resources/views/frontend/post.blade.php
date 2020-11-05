@@ -15,7 +15,7 @@
                     <h2 class="titlePost">
                         {{ $post->name }}
                     </h2>
-                     {!! $post->content !!}
+                    {!! $post->content !!}
                 </div>
                 <!-- //listButton -->
 

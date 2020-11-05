@@ -41,7 +41,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
 
 
-    <link rel="stylesheet" href="/frontend/css/ngocdon.css?v1=1111" type="text/css"/>
+    <link rel="stylesheet" href="/frontend/css/ngocdon.css?v2=33333" type="text/css"/>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     {!! \App\Helpers::configGet('webmaster') !!}
 
@@ -55,6 +55,11 @@
         <h1 class="rs leftSide"><a href="{{ url('/') }}" class="logo" title="{{ \App\Helpers::configGet('website_name') }}" target="_blank">
                 <img src="{{ \App\Helpers::configGet('website_logo_pc') }}" alt="{{ \App\Helpers::configGet('website_name') }}" class="imgFull">
             </a></h1>
+
+        <span class="slogan center">
+                      Chuyên trang cộng đồng <br>
+                      <strong>{{ \App\Helpers::configGet('website_name') }}</strong>
+                  </span>
 
         <div class="rightSide">
             <form action="{{ url('search') }}" method="GET" class="search-on-top">
@@ -74,14 +79,7 @@
             @if ($headerCategories = \App\Helpers::getMainCategories())
                 @foreach ($headerCategories as $headerCategory)
                     <li>
-                        <a class="{{(isset($page) && ($page == $headerCategory->slug || in_array($page, $headerCategory->children->pluck('slug')->all()))) ? 'current' : ''}}" href="{{url($headerCategory->slug)}}">{{$headerCategory->name}}</a>
-                        @if ($headerCategory->children->count() > 0)
-                            <ul class="hasSub">
-                                @foreach ($headerCategory->children as $childCategory)
-                                    <li><a class="{{(isset($page) && $page == $childCategory->slug) ? 'current' : ''}}" href="{{url($childCategory->slug)}}">{{$childCategory->name}}</a></li>
-                                @endforeach
-                            </ul>
-                        @endif
+                        <a class="{{(isset($page) && ($page == $headerCategory->slug)) ? 'current' : ''}}" href="{{url($headerCategory->slug)}}">{{$headerCategory->name}}</a>
                     </li>
                 @endforeach
             @endif
@@ -131,6 +129,6 @@
 <script type="text/javascript" src="/frontend/js/owl.carousel.min.js"></script>
 <script type="text/javascript" src="/frontend/js/common.js"></script>
 @yield('after_scripts')
-
+{!! \App\Helpers::configGet('endpage') !!}
 </body>
 </html>

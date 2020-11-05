@@ -194,6 +194,15 @@ class Helpers
             'active'      => 1,
         ],
 
+        [
+            'key'         => 'endpage',
+            'name'        => 'End Page HTML',
+            'description' => 'For SEO',
+            'value'       => '',
+            'field'       => '{"name":"value","label":"Value","type":"textarea"}', //text, textarea
+            'active'      => 1,
+        ],
+
 
     ];
 
@@ -276,20 +285,9 @@ class Helpers
         return Setting::get($key);
     }
 
-    public static function getMainCategoryHavePosts()
+    public static function getMainCategoryHavePosts($limit=8)
     {
-        $categories = Category::whereNull('parent_id')->get();
-
-        $results = [];
-
-        foreach ($categories as $category) {
-            $posts = self::getCategoryPosts($category);
-
-            if ($posts->count() > 0) {
-                $results[] = $category;
-            }
-        }
-        return $results;
+        return Category::whereNull('parent_id')->where('status', true)->limit($limit)->get();
     }
 
     public static function getCategoryPosts($category, $limit=3)

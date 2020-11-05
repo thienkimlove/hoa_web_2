@@ -1,7 +1,7 @@
 (function($){
   /*mobile*/
   /*tabContent*/
-  var $tabs = $('#horizontalTab');
+  var $tabs = $('.horizontalTab');
   $tabs.responsiveTabs({
       rotate: false,
       startCollapsed: 'accordion',
